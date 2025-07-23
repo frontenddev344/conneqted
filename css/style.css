@@ -83,7 +83,7 @@ h6 {
 .container {
     width: 100%;
     /* max-width: 1743px; */
-    max-width: calc(100% - 196px);
+    max-width: calc(100% - 124px);
     margin: 0 auto;
     padding: 0; 
 }
@@ -558,6 +558,7 @@ span.highlight {
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0;
 }
 .advance-ai-feature .section-title {
     text-align: center;
