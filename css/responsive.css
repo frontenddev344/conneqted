@@ -1,5 +1,111 @@
 
+@media screen and (max-width:1600px){
+	.container {
+		max-width: calc(100% - 140px);
+	}
+	.banner-content h1 {
+		font-size: 78px;
+	}
+	.section-title {
+		font-size: 64px;
+	}
+	.ai-powered-cameras .section-title, .effortless-security .section-title {
+		font-size: 76px;
+	}
+	.sub-title {
+		font-size: 28px;
+	}
+	.btm-content p{
+		font-size: 28px;
+	}
+	.ai-powered-cameras .btm-content h3 {
+		font-size: 28px;
+	}
+	.top_box p {
+		font-size: 28px;
+	}
+	.diy-products .icon-with-text {
+		padding: 40px;
+	}
+	.diy-products {
+		grid-gap: 24px;
+	}
+	.text h4 {
+		font-size: 28px;
+	}
+	.vertical-feature-card .text-content h4 {
+		font-size: 28px;
+	}
+	.top_box {
+		margin: -120px auto 0;
+	}
+	
+}
+@media screen and (max-width:1400px){
+	.container {
+		max-width: calc(100% - 80px);
+	}
+	.primary-btn {
+		padding: 20px 32px 20px 32px;
+		font-size: 18px;
+	}
+	.site-banner .grid {
+		grid-template-columns: 1.2fr 1fr;
+	}
+	.banner-content h1 {
+		font-size: 68px;
+	}
+	.section-title {
+		font-size: 58px;
+	}
+	.ai-powered-cameras .section-title {
+		font-size: 70px;
+	}
+	.sub-title {
+		font-size: 24px;
+	}
+	.btm-content p{
+		font-size: 24px;
+	}
+	.ai-powered-cameras .btm-content h3 {
+		font-size: 24px;
+	}
+	.top_box p {
+		font-size: 24px;
+	}
+	.diy-products .icon-with-text {
+		padding: 30px;
+		gap: 24px;
+	}
+	p {
+		font-size: 22px;
+	}
+	.text-img-content .icon-with-text .text p {
+		font-size: 22px;
+	}
+	.icon {
+		width: 100px;
+		height: 100px;
+		min-width: 100px;
+	}
+	.icon img {
+		max-width: 40px;
+	}
+	.text h4 {
+		font-size: 24px;
+	}
+	.vertical-feature-card .text-content h4 {
+		font-size: 24px;
+	}
+	.top_box {
+		margin: -90px auto 0;
+	}
+
+}
 @media screen and (max-width:1200px) {
+	.container {
+		max-width: calc(100% - 40px);
+	}
 	.site-header .container{
 		display: flex;
 	}
@@ -48,7 +154,7 @@
 	}
 
 	.site-logo img {
-		max-width: 130px;
+		max-width: 180px;
 	}
 
 	.site-header-right {
@@ -57,21 +163,230 @@
 		margin-right: 30px;
 	}
 
-	.banner-content h1 {
-		font-size: 52px;
-	}
 
-	.banner-content {
-		max-width: 850px;
+	.primary-btn {
+		padding: 16px 28px 16px 28px;
+		font-size: 16px;
 	}
 
 	.section-title {
+		font-size: 52px;
+	}
+	
+	.ai-powered-cameras .section-title, .effortless-security .section-title {
+		font-size: 64px;
+	}
+	.banner-content p {
+		font-size: 20px;
+	}
+	.icon {
+		width: 80px;
+		height: 80px;
+		min-width: 80px;
+	}
+	.icon img {
+		max-width: 30px;
+	}
+	.diy-products {
+		grid-gap: 20px;
+	}
+	.diy-products .icon-with-text {
+		gap: 20px;
+	}
+	.text h4 {
+		font-size: 22px;
+	}
+	.vertical-feature-card .text-content h4 {
+		font-size: 22px;
+	}
+	.ai-powered-cameras .advance-ai-feature .section-title {
+		font-size: 40px;
+	}
+	.top_box {
+		margin: 40px auto 0;
+		padding: 64px;
+	}
+	.smart-sensons-features-list li span {
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (max-width:991px){
+	.container {
+		max-width: calc(100% - 20px);
+	}
+	
+	.site-banner .grid {
+		grid-template-columns: 100%;
+	}
+	.site-banner .container {
+		margin: 0 auto;
+	}
+	.banner-img img {
+		width: 100%;
+	}
+	.grid-cols-2 {
+		grid-template-columns:100%;
+	}
+	.sec-sticky {
+		position:static;
+	}
+	.section-title {
+		font-size: 48px;
+		text-wrap: balance;
+	}
+	.ai-powered-cameras .section-title , .effortless-security .section-title{
+		font-size: 60px;
+	}
+	.sub-title {
+		font-size: 22px;
+	}
+	.btm-content p{
+		font-size: 22px;
+	}
+	.ai-powered-cameras .btm-content h3 {
+		font-size: 22px;
+	}
+	.top_box p {
+		font-size: 22px;
+	}
+	.diy-products .icon-with-text {
+		padding: 20px;
+	}
+	.text p {
+		font-size: 18px;
+	}
+	.vertical-feature-card .text-content h4 {
+		font-size: 20px;
+	}
+	.vertical-feature-card .text-content p {
+		font-size: 18px;
+	}
+	.vertical-feature-card-container {
+		gap: 20px;
+	}
+	.vertical-feature-card {
+		width: calc(100% / 3 - 20px);
+	}
+	.ai-powered-cameras-img {
+		margin-bottom: 0;
+	}
+	.ai-powered-cameras .advance-ai-feature .section-title {
 		font-size: 36px;
 	}
-
-	.sub-title {
-		font-size: 26px;
-		max-width: 840px;
+	.effortless-security .text-img-content {
+		margin-left:0;
 	}
+	.modular-scalable .text-img-content {
+		margin-left: 0;
+	}
+	.top_box {
+		padding: 44px;
+	}
+	.smart-sensons-features-list ul {
+		gap: 24px;
+	}
+	.smart-sensons-features-list li span {
+		font-size: 18px;
+	}
+	
+}
 
+@media screen and (max-width:768px){
+	.section-title {
+		font-size: 42px;
+	}
+	.ai-powered-cameras .section-title, .effortless-security .section-title {
+		font-size: 54px;
+	}
+	.sub-title {
+		font-size: 20px;
+	}
+	.ai-powered-cameras .btm-content h3 {
+		font-size: 20px;
+	}
+	.top_box p {
+		font-size: 20px;
+	}
+	.vertical-feature-card {
+		width: calc(100% / 2 - 20px);
+	}
+	.smart-doors .vertical-feature-card {
+		width: calc(100% / 2 - 20px);
+	}
+	.ai-powered-cameras .advance-ai-feature .section-title {
+		font-size: 32px;
+	}
+	.top_box {
+		padding: 24px;
+	}
+	.diy-products {
+		grid-template-columns: 100%;
+	}
+	.icon {
+		width: 65px;
+		height: 65px;
+		min-width: 65px;
+	}
+	.icon img {
+		max-width: 25px;
+	}
+	.diy-products .icon-with-text {
+		gap: 16px;
+	}
+	.smart-sensons-features-list li span {
+		font-size: 16px;
+	}
+	.smart-sensons-features-list ul li p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width:575px){
+	.section-title {
+		font-size: 36px;
+	}
+	.ai-powered-cameras .section-title, .effortless-security .section-title {
+		font-size: 38px;
+	}
+	.sub-title {
+		font-size: 18px;
+	}
+	.vertical-feature-card {
+		width: 100%;
+	}
+	.smart-doors .vertical-feature-card {
+		width: 100%;
+	}
+	.ai-powered-cameras .advance-ai-feature .section-title {
+		font-size: 28px;
+	}
+	.text h4 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:480px){
+	.icon-with-text {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.text h4 {
+		font-size: 18px;
+		text-align: center;
+	}
+	.text p {
+		font-size: 16px;
+		text-align: center;
+	}
+	.icon {
+		width: 60px;
+		height: 60px;
+		min-width: 60px;
+	}
+	.icon img {
+		max-width: 20px;
+	}
 }

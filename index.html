@@ -15,6 +15,7 @@
 <body>
     
     <main id="main">
+        <!-- site-header start -->
         <header class="site-header">
             <div class="container">
                 <div class="site-logo">
@@ -22,11 +23,11 @@
                 </div>
                 <nav class="site-nav">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">Shop all</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#" data-text="Home" class="active">Home</a></li>
+                    <li><a href="#" data-text="About Us">About Us</a></li>
+                    <li><a href="#" data-text="Discover">Discover</a></li>
+                    <li><a href="#" data-text="Shop all">Shop all</a></li>
+                    <li><a href="#" data-text="Contact us">Contact us</a></li>
                     <li class="closed-menu">
                         <a href="#">
                            <img src="images/close-btn.svg" alt="close-btn">
@@ -51,6 +52,7 @@
                 </div>
             </div>
           </header>
+          <!-- site-header end -->
           <!-- site-banner start  -->
           <section class="site-banner">
               <div class="container">
@@ -84,13 +86,13 @@
                 <div class="grid grid-cols-2">
                     <div class="item">
                         <div class="text-img-content">
-                            <h2 class="section-title">why security matter more than ever</h2>
-                            <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate placeat earum reiciendis ducimus velit nihil?</p>
+                            <h2 class="section-title">Why Security Matters More Than Ever</h2>
+                            <p class="sub-title">Your home is more than just a structure—it’s your fortress, your safe haven, and the place where life’s most meaningful moments happen. It’s where your family should feel safe, recharge, and create memories without worry.</p>
+                            <p>In today’s world, it’s not enough to just feel secure—you need to be secure and know your home is protected.</p>
                             <div class="icon-with-text">
                                 <div class="icon"><img src="images/Icon-1.svg" alt="icon"></div>
                                 <div class="text">
-                                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate placeat earum reiciendis ducimus velit nihil?</h4>
+                                    <p>Studies show that homes with professional security systems are far less likely to experience break-ins. A visible, properly installed system doesn’t just respond to threats—it deters them.</p>
                                 </div>
                             </div>
                         </div>
@@ -107,8 +109,8 @@
         <section class="diy-pro">
             <div class="container">
                 <div class="heading-deatils">
-                    <h2 class="section-title">why wired system outperform DIY products</h2>
-                    <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                    <h2 class="section-title">Why Wired Systems Outperform DIY Products</h2>
+                    <p class="sub-title">While off-the-shelf, battery-powered cameras might offer convenience, they can fall short where it matters most: reliability and protection.</p>
                 </div>
                 <div class="diy-products">
                     <div class="icon-with-text">
@@ -151,6 +153,9 @@
                       </div>
                     </div>
                   </div>
+                  <div class="btm-content">
+                      <p>With Conneqted, you get a fully integrated, PoE wired system built for real security—so you can protect what matters most, every day.</p>
+                  </div>
                   
             </div>
         </section>
@@ -165,12 +170,12 @@
                     <h2 class="section-title">AI-powered cameras</h2>
                 </div>
                 <div class="ai-camera-content">
-                    <h3>see everything. miss nothing.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odit doloribus nesciunt facilis omnis illum, aperiam amet error ea. Nobis!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam atque quasi, eos rerum harum!</p>
+                    <h3>See Everything. Miss Nothing.</h3>
+                    <p>With Conneqted’s AI-powered camera system, you get a full 360° view of your home and surroundings—day or night. Every event is recorded locally, so your footage stays secure and accessible even if the internet goes down.</p>
+                    <p>Stay in control with smart notifications the moment something happens. The system doesn’t just see movement—it knows what it’s seeing.</p>
                 </div>
                 <div class="advance-ai-feature">
-                    <h4 class="section-title">AI-powered features</h4>
+                    <h4 class="section-title">Advanced AI Features Include:</h4>
 
                     <div class="vertical-feature-card-container">
                         <div class="vertical-feature-card">
@@ -178,8 +183,8 @@
                                 <img src="images/Icon-6.svg" alt="icon">
                             </div>
                             <div class="text-content">
-                                <h4>Wired Systems Are More Secure</h4>
-                                <p>Hardwired connections are much harder to hack or tamper with</p>
+                                <h4>Person Detection</h4>
+                                <p>Know exactly when someone approaches your property</p>
                             </div>
                         </div>
                         <div class="vertical-feature-card">
@@ -187,8 +192,10 @@
                                 <img src="images/Icon-7.svg" alt="icon">
                             </div>
                             <div class="text-content">
-                                <h4>Wired Systems Are More Secure</h4>
-                                <p>Hardwired connections are much harder to hack or tamper with</p>
+                                <h4>Vehicle & License
+                                    Plate Recognition</h4>
+                                <p>Capture and log
+                                    passing or parked vehicles</p>
                             </div>
                         </div>
                         <div class="vertical-feature-card">
@@ -196,8 +203,10 @@
                                 <img src="images/Icon-8.svg" alt="icon">
                             </div>
                             <div class="text-content">
-                                <h4>Wired Systems Are More Secure</h4>
-                                <p>Hardwired connections are much harder to hack or tamper with</p>
+                                <h4>Alarm Sound
+                                    Detection </h4>
+                                <p>Get notified if a smoke
+                                    alarm or siren is heard</p>
                             </div>
                         </div>
                         <div class="vertical-feature-card">
@@ -205,13 +214,16 @@
                                 <img src="images/Icon-9.svg" alt="icon">
                             </div>
                             <div class="text-content">
-                                <h4>Wired Systems Are More Secure</h4>
-                                <p>Hardwired connections are much harder to hack or tamper with</p>
+                                <h4>Pet
+                                    Awareness</h4>
+                                <p>Avoid false alarms with smart pet detection—even the neighborhood cat</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h3>conneqted cameras don't just record. they prevent.</h3>
+                <div class="btm-content">
+                    <h3>Conneqted’s cameras don’t just record—they understand what’s happening, giving you smarter security and greater peace of mind.</h3>
+                </div>
             </div>
         </section>
         <!-- ai-powered-cameras end  -->
@@ -227,7 +239,7 @@
                     <div class="item">
                         <div class="text-img-content">
                             <h2 class="section-title">Modular. Scalable.<br>Built to Grow With You.</h2>
-                            <p class="sub-title">Conneqted’s security systems are designed with modularity and scalability at their core — so your protection can grow as your home and needs evolve.</p>
+                            <p class="sub-title">Conneqted’s security systems are designed with modularity and scalability at their core—so your protection can grow as your home and needs evolve.</p>
                             
                             <a href="#" class="primary-btn">
                                 <span class="corner-border">
@@ -322,7 +334,21 @@
 
         <!-- smart-sensons start  -->
         <section class="smart-doors smart-sensons">
-            <img src="images/smart-sensors.png" alt="smart-sensons">
+            <div class="smart-sensons-features">
+                <img src="images/smart-sensors.png" alt="smart-sensons">
+                <div class="smart-sensons-features-list">
+                    <ul>
+                        <li><span>Instant Alerts</span></li>
+                        <li class="active">
+                            <span>Early Damage Prevention</span>
+                            <p>Stop leaks, mold, and freezing before they escalate</p>
+                        </li>
+                        <li><span>Peace of Mind</span></li>
+                        <li><span>Seamless Integration</span></li>
+                        <li><span>Discreet & Reliable</span></li>
+                    </ul>
+                </div>
+            </div>
             <div class="container">
                 <div class="top_box">
                     <h2 class="section-title">Smart Sensors That Keep You One Step Ahead</h2>
@@ -379,6 +405,7 @@
             </div>
         </section>
         <!-- smart-sensons end  -->
+        <!-- effortless-security start  -->
         <section class="text-img-sec effortless-security">
             <div class="container">
                 <div class="grid grid-cols-2">
@@ -389,7 +416,7 @@
                     </div>
                     <div class="item">
                         <div class="text-img-content">
-                            <h2 class="section-title">Effortless Security,Total Peace of Mind</h2>
+                            <h2 class="section-title">Effortless Security,<br> Total Peace of Mind</h2>
                             <p class="sub-title">Security shouldn’t be complicated.
                                 Conneqted makes it simple—no contracts, no confusing setups, just a powerful security system that protects what matters most.
                             </p>
@@ -406,9 +433,9 @@
                 </div>
             </div>
            </section>
+           <!-- effortless-security end  -->
     </main>
     
-     <!-- modal and popup's end  -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/swiper.js"></script>
