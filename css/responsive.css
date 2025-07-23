@@ -100,6 +100,12 @@
 	.top_box {
 		margin: -90px auto 0;
 	}
+	.banner-content {
+		padding-bottom: 124px;
+	}
+	.banner-content {
+		padding: 200px 0 150px;
+	}
 
 }
 @media screen and (max-width:1200px) {
@@ -172,9 +178,14 @@
 	.section-title {
 		font-size: 52px;
 	}
-	
+	.banner-content h1 {
+		font-size: 64px;
+	}
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
 		font-size: 64px;
+	}
+	.text-img-content h3.section-title {
+		font-size: 40px;
 	}
 	.banner-content p {
 		font-size: 20px;
@@ -209,19 +220,53 @@
 	.smart-sensons-features-list li span {
 		font-size: 20px;
 	}
+	.banner-content {
+		padding-bottom: 124px;
+	}
+	.modular-scalable {
+		padding: 84px 0;
+	}
+	.effortless-security {
+		padding: 84px 0;
+	}
+	.smart-doors .container {
+		padding-bottom: 84px;
+	}
+	.diy-pro {
+		padding: 64px 0 84px;
+	}
 
 }
 
 @media screen and (max-width:991px){
+	p {
+		font-size: 20px;
+	}
 	.container {
 		max-width: calc(100% - 20px);
 	}
-	
+	.site-banner {
+		margin-bottom: 124px;
+	}
 	.site-banner .grid {
 		grid-template-columns: 100%;
 	}
 	.site-banner .container {
 		margin: 0 auto;
+	}
+
+	.banner-content {
+		padding: 84px 0;
+		margin-top: 125px;
+	}
+	.banner-content h1 {
+		font-size: 58px;
+	}
+	.banner-img {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
 	}
 	.banner-img img {
 		width: 100%;
@@ -242,6 +287,10 @@
 	.sub-title {
 		font-size: 22px;
 	}
+	.text-img-content .icon-with-text .text p {
+		font-size: 20px;
+	}
+	
 	.btm-content p{
 		font-size: 22px;
 	}
@@ -290,12 +339,37 @@
 	.smart-sensons-features-list li span {
 		font-size: 18px;
 	}
+	.text-img-content h3.section-title {
+		font-size: 36px;
+	}
 	
 }
 
 @media screen and (max-width:768px){
+	.site-logo img {
+		max-width: 160px;
+	}
+	.banner-content h1 {
+		font-size: 52px;
+	}
+	.banner-content {
+		padding: 64px 0;
+		margin-top: 94px;
+	}
+	.btm-content p {
+		font-size: 20px;
+	}
+	.site-banner {
+		margin-bottom: 84px;
+	}
+	.heading-deatils {
+		margin: 0 auto 44px;
+	}
 	.section-title {
 		font-size: 42px;
+	}
+	.primary-btn {
+		padding: 12px 24px 12px 24px;
 	}
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
 		font-size: 54px;
@@ -341,11 +415,43 @@
 	.smart-sensons-features-list ul li p {
 		font-size: 16px;
 	}
+	.smart-sensons-features > img {
+		display: none;
+	}
+	.smart-sensons-features-list {
+		position: static;
+		transform: translate(0, 0);
+		background-image: url("../images/smart-sensors.png");
+		background-position: center;
+		background-size: cover;
+		padding: 40px 0;
+	}
+	.text-img-sec .section-title {
+		margin-bottom: 44px;
+	}
+	.text-img-content h3.section-title {
+		font-size: 32px;
+	}
+	.effortless-security {
+		padding: 64px 0;
+	}
+	.smart-doors .container {
+		padding-bottom: 64px;
+	}
 }
 
 @media screen and (max-width:575px){
+	.site-nav {
+		max-width: 100%;
+	}
+	.banner-content h1 {
+		font-size: 44px;
+	}
 	.section-title {
 		font-size: 36px;
+	}
+	.site-banner {
+		margin-bottom: 64px;
 	}
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
 		font-size: 38px;
@@ -365,9 +471,30 @@
 	.text h4 {
 		font-size: 20px;
 	}
+	.text-img-content h3.section-title {
+		font-size: 28px;
+	}
+	.top_box {
+		padding: 16px;
+	}
+	.top_box p {
+		font-size: 18px;
+	}
+	.effortless-security {
+		padding: 44px 0;
+	}
+	.smart-doors .container {
+		padding-bottom: 44px;
+	}
 }
 
 @media screen and (max-width:480px){
+	.section-title {
+		font-size: 32px;
+	}
+	.banner-content p {
+		font-size: 18px;
+	}
 	.icon-with-text {
 		flex-wrap: wrap;
 		align-items: center;
@@ -388,5 +515,13 @@
 	}
 	.icon img {
 		max-width: 20px;
+	}
+	.smart-sensons-features-list li span {
+		line-height: 1;
+		padding: 8px 20px 8px 20px;
+		font-size: 14px;
+	}
+	.smart-sensons-features-list ul li p {
+		font-size: 14px;
 	}
 }
