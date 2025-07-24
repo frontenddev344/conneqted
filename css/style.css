@@ -728,7 +728,7 @@ span.highlight {
 }
 .modular-scalable .text-img-content {
     width: 100%;
-    max-width: 595px;
+    max-width: 565px;
     margin: 0 auto;
 }
 
@@ -841,11 +841,18 @@ font-family: 'Helvetica Neue';
     cursor: pointer;
 }
 
+.smart-sensons-features-list li:last-child span {
+    opacity: 0.1;
+}
+.smart-sensons-features-list li:nth-last-child(2) span {
+    opacity: 0.2;
+}
 .smart-sensons-features-list li.active span {
     opacity: 1;
     color: #fff;
     background: linear-gradient(90deg, rgba(68, 93, 244, 1) 0%, rgba(218, 88, 112, 1) 100%);
 }
+
 .smart-sensons-features  img {
     width: 100%;
 }
@@ -869,7 +876,7 @@ font-family: 'Helvetica Neue';
     max-width: 740px;
 }
 .effortless-security .sub-title {
-    max-width: 680px;
+    max-width: 660px;
 }
 /* effortless-security end  */
 
