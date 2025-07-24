@@ -914,5 +914,117 @@ font-family: 'Helvetica Neue';
     display: block;
     max-width: 690px;
 }
+.vertical-common-layout {
+    padding-bottom: 64px;
+    display: grid;
+    gap: 64px;
+}
+.vertical-common-layout .text-img-sec .grid {
+    align-items: center;
+}
+.vertical-common-layout .text-img-sec:nth-child(even) .grid .item:last-child {
+    grid-area: 1;
+}
+.vertical-common-layout .text-img-sec:nth-child(odd) .text-img-content {
+    margin-left: auto;
+}
+.btn-details {
+    text-align: center;
+    margin: 64px 0;
+}
 
+/* comparison section start  */
+.network-comparison {
+    background: #fff;
+    padding: 84px 0;
+}
+  
+  .comparison-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 44px;
+    gap: 15px;
+}
+  
+  .comparison-header h2 {
+    flex: 1;
+    margin: 0;
+    font-size: 24px;
+  }
+  .comparison-header .section-title {
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+}
+
+  .comparison-header h2:last-child {
+    color:var(--black);
+  }
+  
+  .comparison-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    position: relative;
+    background: linear-gradient(
+    0deg,
+    rgba(23, 19, 35, 1) 0%,
+    rgba(13, 10, 25, 1) 100%
+  );
+  overflow: hidden;
+}
+.comparison-row:last-child {
+    margin: 0;
+}
+  
+.comparison-row > div {
+    padding: 32px 84px;
+}
+  
+  .left {
+    color: #fff;
+    background-image: linear-gradient(90deg, rgba(68, 93, 244, 1) 0%, rgba(218, 88, 112, 1) 100%);
+ }
+  
+ .right {
+    color: var(--black);
+    background: linear-gradient(
+    84.47deg,
+    rgba(89, 86, 97, 0.2) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(54, 49, 73, 0.5) 100%
+  );
+}
+
+.comparison-row .left, .comparison-row .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.network-comparison p {
+    color: #fff;
+}
+
+.network-comparison .vs {
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+  .vs  span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+  
+/* comparison section end  */
 /* connect internal page end  */
