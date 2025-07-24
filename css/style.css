@@ -822,9 +822,6 @@ font-family: 'Helvetica Neue';
     margin-top: 10px;
     display: none;
 }
-/* .smart-sensons-features-list ul li.active p {
-    display: block;
-} */
 .smart-sensons-features-list {
     position: absolute;
     top: 50%;
@@ -888,8 +885,8 @@ font-family: 'Helvetica Neue';
     width: 50vw;
 }
 
-.internal-page .banner-img img{
-    width: 100%;
+.internal-page .banner-img img {
+    margin-left: -160px;
 }
 
 .banner-content h1 span {
@@ -941,7 +938,7 @@ font-family: 'Helvetica Neue';
 /* comparison section start  */
 .network-comparison {
     background: #fff;
-    padding: 84px 0;
+    padding: 84px 0 0;
 }
   
   .comparison-header {
@@ -1024,7 +1021,7 @@ font-family: 'Helvetica Neue';
     top: 50%;
     transform: translate(-50%, -50%);
 }
-  .vs  span{
+.vs span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1033,6 +1030,7 @@ font-family: 'Helvetica Neue';
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 1px solid #ffffff40;
 }
   
 /* comparison section end  */
@@ -1059,5 +1057,19 @@ font-family: 'Helvetica Neue';
     letter-spacing: -0.02em;
     font-weight: 300;
     color: rgb(255 255 255 / 50%);
+}
+
+.vertical-common-layout.resverse-columns .text-img-sec:nth-child(odd) .text-img-content {
+    margin-left: 0;
+}
+.vertical-common-layout.resverse-columns .text-img-sec:nth-child(even) .text-img-content {
+    margin-left: auto;
+}
+.text-img-sec .gray-graditent {
+    background: linear-gradient(84.47deg, #595661 0.21%, #FFFFFF 43.01%, #363149 85.81%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 84px;
 }
 /* connect internal page end  */

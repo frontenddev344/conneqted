@@ -350,6 +350,18 @@
 	.text-img-content h3.section-title {
 		font-size: 36px;
 	}
+	.internal-page .banner-img {
+		width: 100%;
+	}
+	.internal-page .banner-img img {
+		margin-left: 0;
+	}
+	.vertical-common-layout .text-img-sec:nth-child(odd) .text-img-content {
+		margin-left:0;
+	}
+	.vertical-common-layout .text-img-sec:nth-child(even) .grid .item:last-child {
+		grid-area: auto;
+	}
 	
 }
 
