@@ -820,7 +820,11 @@ font-family: 'Helvetica Neue';
     letter-spacing: -0.02em;
     font-weight: 400;
     margin-top: 10px;
+    display: none;
 }
+/* .smart-sensons-features-list ul li.active p {
+    display: block;
+} */
 .smart-sensons-features-list {
     position: absolute;
     top: 50%;
@@ -837,6 +841,7 @@ font-family: 'Helvetica Neue';
     border-radius: 124px;
     opacity: 0.3;
     padding: 8px 24px 8px 24px;
+    cursor: pointer;
 }
 
 .smart-sensons-features-list li.active span {
@@ -1007,7 +1012,11 @@ font-family: 'Helvetica Neue';
 .network-comparison p {
     color: #fff;
 }
-
+.comparison-row .right p {
+    max-width: 400px;
+    margin: 0 auto;
+    text-wrap: balance;
+}
 .network-comparison .vs {
     padding: 0;
     position: absolute;
@@ -1027,4 +1036,28 @@ font-family: 'Helvetica Neue';
 }
   
 /* comparison section end  */
+
+
+.vertical-common-layout.resverse-columns .text-img-sec:nth-child(even) .grid .item:last-child {
+    grid-area: auto;
+}
+.vertical-common-layout.resverse-columns .text-img-sec:nth-child(odd) .grid .item:last-child {
+    grid-area: 1;
+}
+.text-img-content .sub-title mark {
+    background: transparent;
+    padding: 0;
+    color: #da5870;
+    font-weight: 500;
+}
+.text-img-content .sub-title em {
+    font-weight: 500;
+}
+.text-img-content > span {
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+    color: rgb(255 255 255 / 50%);
+}
 /* connect internal page end  */
