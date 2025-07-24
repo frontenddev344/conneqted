@@ -10,7 +10,7 @@
    
     --black:#171325;
     --gray:#E8E8E8;
-    --helvetica:'Helvetica';
+    --helvetica:'Helvetica Neue';
     --roboto:"Roboto", sans-serif;
     
 }
@@ -44,7 +44,7 @@ a:hover {
 
 p {
     color: #fff;
-    font-family: Helvetica;
+font-family: 'Helvetica Neue';
     margin: 0;
     font-size: 24px;
     line-height: 140%;
@@ -134,7 +134,7 @@ h6 {
     color: #fff;
     background: var(--black);
     line-height: 22px;
-    font-family: Helvetica;
+font-family: 'Helvetica Neue';
     font-weight: 300;
     transition: all 0.2s linear;
     display: inline-block;
@@ -321,7 +321,7 @@ h6 {
     color: #FFF;
     position: relative;
     transition: all 0.2s linear;
-    font-family: Helvetica;
+font-family: 'Helvetica Neue';
     font-size: 18px;
     font-weight: 300;
     line-height: normal;
@@ -420,7 +420,7 @@ span.highlight {
 }
 .sub-title {
     color: #fff;
-    font-family: Helvetica;
+    font-family: 'Helvetica Neue';
     margin: 0;
     font-weight: 300;
     font-size: 32px;
@@ -450,8 +450,6 @@ span.highlight {
 }
 .site-banner .container {
     height: 100%;
-    position: relative;
-    z-index: 1;
     margin-left: 0;
 }
 .site-banner-warp {
@@ -573,7 +571,7 @@ span.highlight {
 
 .text h4 {
     color: #fff;
-    font-family: Helvetica;
+    font-family: 'Helvetica Neue';
     margin: 0;
     font-size: 32px;
     line-height: 140%;
@@ -773,7 +771,7 @@ span.highlight {
     background: var(--black);
     font-size: 18px;
     line-height: 20px;
-    font-family: Helvetica;
+font-family: 'Helvetica Neue';
     font-weight: 300;
 }
 
@@ -872,3 +870,49 @@ span.highlight {
     max-width: 680px;
 }
 /* effortless-security end  */
+
+/* connect internal page start  */
+.internal-page .site-banner .container {
+    margin: 0 auto;
+}
+
+.internal-page .banner-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50vw;
+}
+
+.internal-page .banner-img img{
+    width: 100%;
+}
+
+.banner-content h1 span {
+    background: linear-gradient(84.47deg, #595661 0.21%, #FFFFFF 43.01%, #363149 85.81%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.banner-content h3 {
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+    max-width: 670px;
+    margin-bottom: 24px;
+}
+
+.banner-content > span {
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+    color: rgb(255 255 255 / 50%);
+    display: block;
+    max-width: 690px;
+}
+
+/* connect internal page end  */
