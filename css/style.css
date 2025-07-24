@@ -761,7 +761,9 @@ span.highlight {
 .smart-doors {
     background: #fff;
 }
-
+.smart-doors > img {
+    width: 100%;
+}
 .smart-doors .section-title {
     max-width: 470px;
     margin-inline: auto;
