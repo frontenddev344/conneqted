@@ -520,7 +520,7 @@ span.highlight {
 
 .text-img-sec .grid {
     grid-gap: 15px;
-    align-items: start;
+    align-items: center;
 }
 
 .text-img-content {
@@ -722,6 +722,9 @@ span.highlight {
 /* modular-scalable start  */
 .modular-scalable {
     padding: 124px 0;
+}
+.modular-scalable .grid {
+    align-items: start;
 }
 .modular-scalable .text-img-content .sub-title:not(:last-child) {
     margin-bottom: 64px;

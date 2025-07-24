@@ -139,6 +139,9 @@
 	.text-img-content > span {
 		font-size: 22px;
 	}
+	.text-img-sec .gray-graditent {
+		font-size: 64px;
+	}
 
 }
 @media screen and (max-width:1200px) {
@@ -220,7 +223,7 @@
 		font-size: 64px;
 	}
 	.text-img-sec .gray-graditent {
-		font-size: 64px;
+		font-size: 52px;
 	}
 	.text-img-content h3.section-title {
 		font-size: 40px;
@@ -278,6 +281,8 @@
 	}
 	.network-comparison .comparison-header .section-title {
 		font-size: 50px;
+		max-width: 30%;
+		margin: 0 auto;
 	}
 	.text-img-content > span {
 		font-size: 20px;
@@ -332,7 +337,7 @@
 		font-size: 60px;
 	}
 	.text-img-sec .gray-graditent {
-		font-size: 60px;
+		font-size: 48px;
 	}
 	.sub-title {
 		font-size: 22px;
@@ -466,7 +471,7 @@
 		font-size: 54px;
 	}
 	.text-img-sec .gray-graditent {
-		font-size: 54px;
+		font-size: 44px;
 	}
 	.sub-title {
 		font-size: 20px;
@@ -631,6 +636,7 @@
 	}
 	.network-comparison .comparison-header .section-title {
 		font-size: 32px;
+		max-width: 40%;
 	}
 	.comparison-header {
 		margin-bottom: 24px;
