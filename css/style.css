@@ -667,7 +667,7 @@ span.highlight {
     display: grid;
     grid-gap: 32px;
     width: 100%;
-    max-width: 1070px;
+    max-width: 1030px;
     margin-inline: auto;
 }
 .ai-camera-content > h3 {
