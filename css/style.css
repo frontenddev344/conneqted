@@ -374,6 +374,10 @@ h6 {
     text-align: right;
 }
 
+.site-nav li.mobile-btn {
+    display: none;
+}
+
 .menu-toggle{
     display: none;
 }

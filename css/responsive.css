@@ -64,6 +64,9 @@
 	.sub-title {
 		font-size: 24px;
 	}
+	.ai-camera-content > h3 {
+		font-size: 24px;
+	}
 	.btm-content p{
 		font-size: 24px;
 	}
@@ -168,7 +171,9 @@
 		margin-left: auto;
 		margin-right: 30px;
 	}
-
+	.site-nav li.mobile-btn {
+		display:block;
+	}
 
 	.primary-btn {
 		padding: 16px 28px 16px 28px;
@@ -243,7 +248,7 @@
 		font-size: 20px;
 	}
 	.container {
-		max-width: calc(100% - 20px);
+		max-width: calc(100% - 30px);
 	}
 	.site-banner {
 		margin-bottom: 124px;
@@ -285,6 +290,9 @@
 		font-size: 60px;
 	}
 	.sub-title {
+		font-size: 22px;
+	}
+	.ai-camera-content > h3 {
 		font-size: 22px;
 	}
 	.text-img-content .icon-with-text .text p {
@@ -346,6 +354,12 @@
 }
 
 @media screen and (max-width:768px){
+	p {
+		font-size: 18px;
+	}
+	.text-img-content .icon-with-text .text p {
+		font-size: 18px;
+	}
 	.site-logo img {
 		max-width: 160px;
 	}
@@ -381,6 +395,9 @@
 		font-size: 20px;
 	}
 	.top_box p {
+		font-size: 20px;
+	}
+	.ai-camera-content > h3 {
 		font-size: 20px;
 	}
 	.vertical-feature-card {
@@ -441,6 +458,9 @@
 }
 
 @media screen and (max-width:575px){
+	.site-logo img {
+		max-width: 140px;
+	}
 	.site-nav {
 		max-width: 100%;
 	}
@@ -450,6 +470,13 @@
 	.section-title {
 		font-size: 36px;
 	}
+	.primary-btn {
+		padding: 10px 20px 10px 20px;
+		font-size: 14px;
+	}
+	.site-header-right {
+		display: none;
+	}
 	.site-banner {
 		margin-bottom: 64px;
 	}
@@ -457,6 +484,9 @@
 		font-size: 38px;
 	}
 	.sub-title {
+		font-size: 18px;
+	}
+	.ai-camera-content > h3 {
 		font-size: 18px;
 	}
 	.vertical-feature-card {
