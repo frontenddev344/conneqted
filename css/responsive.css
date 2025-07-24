@@ -12,7 +12,13 @@
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
 		font-size: 76px;
 	}
+	.text-img-sec .gray-graditent {
+		font-size: 74px;
+	}
 	.sub-title {
+		font-size: 28px;
+	}
+	.banner-content h3 {
 		font-size: 28px;
 	}
 	.btm-content p{
@@ -39,6 +45,12 @@
 	.top_box {
 		margin: -120px auto 0;
 	}
+	.network-comparison .comparison-header .section-title {
+		font-size: 58px;
+	}
+	.comparison-row > div {
+		padding: 22px 32px;
+	}
 	
 }
 @media screen and (max-width:1400px){
@@ -62,6 +74,9 @@
 		font-size: 70px;
 	}
 	.sub-title {
+		font-size: 24px;
+	}
+	.banner-content h3 {
 		font-size: 24px;
 	}
 	.ai-camera-content > h3 {
@@ -108,6 +123,21 @@
 	}
 	.banner-content {
 		padding: 200px 0 150px;
+	}
+	.network-comparison .comparison-header .section-title {
+		font-size: 54px;
+	}
+	.comparison-row > div {
+		padding: 15px 35px;
+	}
+	.network-comparison p {
+		font-size: 20px;
+	}
+	.banner-content > span {
+		font-size: 22px;
+	}
+	.text-img-content > span {
+		font-size: 22px;
 	}
 
 }
@@ -189,10 +219,16 @@
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
 		font-size: 64px;
 	}
+	.text-img-sec .gray-graditent {
+		font-size: 64px;
+	}
 	.text-img-content h3.section-title {
 		font-size: 40px;
 	}
 	.banner-content p {
+		font-size: 20px;
+	}
+	.banner-content > span {
 		font-size: 20px;
 	}
 	.icon {
@@ -239,6 +275,12 @@
 	}
 	.diy-pro {
 		padding: 64px 0 84px;
+	}
+	.network-comparison .comparison-header .section-title {
+		font-size: 50px;
+	}
+	.text-img-content > span {
+		font-size: 20px;
 	}
 
 }
@@ -289,6 +331,9 @@
 	.ai-powered-cameras .section-title , .effortless-security .section-title{
 		font-size: 60px;
 	}
+	.text-img-sec .gray-graditent {
+		font-size: 60px;
+	}
 	.sub-title {
 		font-size: 22px;
 	}
@@ -306,6 +351,9 @@
 		font-size: 22px;
 	}
 	.top_box p {
+		font-size: 22px;
+	}
+	.banner-content h3 {
 		font-size: 22px;
 	}
 	.diy-products .icon-with-text {
@@ -362,6 +410,23 @@
 	.vertical-common-layout .text-img-sec:nth-child(even) .grid .item:last-child {
 		grid-area: auto;
 	}
+	.vertical-common-layout.resverse-columns .text-img-sec:nth-child(odd) .grid .item:last-child {
+		grid-area: auto;
+	}
+	.vertical-common-layout.resverse-columns .text-img-sec:nth-child(even) .text-img-content {
+		margin-left:0;
+	}
+	.network-comparison .comparison-header .section-title {
+		font-size: 42px;
+	}
+	.comparison-header {
+		gap: 8px;
+	}
+	.vs span {
+		width: 40px;
+		height: 40px;
+		font-size: 14px;
+	}
 	
 }
 
@@ -400,6 +465,9 @@
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
 		font-size: 54px;
 	}
+	.text-img-sec .gray-graditent {
+		font-size: 54px;
+	}
 	.sub-title {
 		font-size: 20px;
 	}
@@ -410,6 +478,9 @@
 		font-size: 20px;
 	}
 	.ai-camera-content > h3 {
+		font-size: 20px;
+	}
+	.banner-content h3 {
 		font-size: 20px;
 	}
 	.vertical-feature-card {
@@ -467,6 +538,30 @@
 	.smart-doors .container {
 		padding-bottom: 64px;
 	}
+	.network-comparison .comparison-header .section-title {
+		font-size: 38px;
+	}
+	.comparison-row {
+		grid-template-columns: 100%;
+	}
+	.comparison-row > div {
+		padding: 30px 15px;
+	}
+	.network-comparison .vs {
+		position: static;
+		transform: translate(0, 50%);
+		margin-top: -40px;
+		text-align: center;
+	}
+	.vs span {
+		margin: 0 auto;
+	}
+	.ai-powered-cameras {
+		padding-bottom: 64px;
+	}
+	.network-comparison {
+		padding: 64px 0 0;
+	}
 }
 
 @media screen and (max-width:575px){
@@ -495,7 +590,13 @@
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
 		font-size: 38px;
 	}
+	.text-img-sec .gray-graditent {
+		font-size: 38px;
+	}
 	.sub-title {
+		font-size: 18px;
+	}
+	.banner-content h3 {
 		font-size: 18px;
 	}
 	.ai-camera-content > h3 {
@@ -527,6 +628,28 @@
 	}
 	.smart-doors .container {
 		padding-bottom: 44px;
+	}
+	.network-comparison .comparison-header .section-title {
+		font-size: 32px;
+	}
+	.comparison-header {
+		margin-bottom: 24px;
+	}
+	.vertical-common-layout {
+		padding-bottom: 44px;
+		gap: 44px;
+	}
+	.ai-powered-cameras {
+		padding-bottom: 44px;
+	}
+	.network-comparison {
+		padding: 44px 0 0;
+	}
+	.btn-details {
+		margin: 44px 0;
+	}
+	.network-comparison p {
+		font-size: 18px;
 	}
 }
 
@@ -565,5 +688,17 @@
 	}
 	.smart-sensons-features-list ul li p {
 		font-size: 14px;
+	}
+	.network-comparison .comparison-header .section-title {
+		font-size: 26px;
+	}
+	.ai-powered-cameras .section-title, .effortless-security .section-title {
+		font-size: 34px;
+	}
+	.text-img-sec .gray-graditent {
+		font-size: 34px;
+	}
+	.network-comparison p {
+		font-size: 16px;
 	}
 }
