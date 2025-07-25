@@ -1100,6 +1100,12 @@ font-family: 'Helvetica Neue';
 /* connect internal page end  */
 
 /* automate page start  */
+.automate-page .banner-content p {
+    max-width: 680px;
+}
+.automate-page .banner-content p:not(:last-child) {
+    margin-bottom: 24px;
+}
 .automate-page .vertical-feature-card {
     width: calc(100% / 4 - 24px);
 }

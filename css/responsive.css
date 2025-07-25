@@ -558,6 +558,9 @@
 	.automate-page .banner-img {
 		height:100%;
 	}
+	.automate-page .banner-content p:not(:last-child) {
+		margin-bottom: 18px;
+	}
 }
 
 @media screen and (max-width:768px){
