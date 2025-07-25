@@ -360,6 +360,9 @@
 		padding-bottom: 44px;
 		gap: 44px;
 	}
+	.text-img-sec h5.section-title {
+		font-size: 22px;
+	}
 
 }
 
@@ -537,9 +540,21 @@
 	.text-img-sec .gray-graditent br {
 		display: none;
 	}
+	.text-img-sec h5.section-title {
+		font-size: 20px;
+	}
+	.smart-doors .vertical-feature-card-container {
+		margin-top: 40px;
+	}
+	.top_box {
+		margin: 20px auto 0;
+	}
 }
 
 @media screen and (max-width:768px){
+	.banner-content h1 {
+		margin: 0 0 32px;
+	}
 	p {
 		font-size: 18px;
 	}
@@ -689,6 +704,9 @@
 	.vertical-common-layout .vertical-feature-card-container {
 		row-gap: 24px;
 	}
+	.automate-page .vertical-feature-card-container .section-title {
+		margin-bottom: 0;
+	}
 }
 
 @media screen and (max-width:575px){
@@ -821,6 +839,9 @@
 	}
 	.comparison-row .right {
 		padding-right: 5px;
+	}
+	.heading-deatils {
+		margin: 0 auto 24px;
 	}
 }
 
