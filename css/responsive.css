@@ -572,6 +572,12 @@
 	.vertical-common-layout.vertical-space .text-img-sec h2.section-title {
 		font-size: 48px;
 	}
+	.text-img-content {
+		max-width: 100%;
+	}
+	.text-img-content .sub-title:not(:last-child) {
+		max-width: 100%;
+	}
 }
 
 @media screen and (max-width:768px){

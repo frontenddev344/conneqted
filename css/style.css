@@ -553,6 +553,7 @@ span.highlight {
 
 .text-img-content .sub-title:not(:last-child) {
     margin-bottom: 32px;
+    max-width: 610px;
 }
 .text-img-content .icon-with-text .text p {
     font-size: 24px;
