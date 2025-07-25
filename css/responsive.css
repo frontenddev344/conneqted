@@ -377,6 +377,9 @@
 	.vertical-common-layout.vertical-space .text-img-sec h2.section-title {
 		font-size: 58px;
 	}
+	.vertical-common-layout .text-img-sec .primary-btn {
+		margin-top: 16px;
+	}
 
 }
 
@@ -577,6 +580,9 @@
 	}
 	.text-img-content .sub-title:not(:last-child) {
 		max-width: 100%;
+	}
+	.vertical-common-layout .text-img-sec .primary-btn {
+		margin-top: 0;
 	}
 }
 
