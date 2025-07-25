@@ -534,6 +534,9 @@
 		padding-bottom: 34px;
 		gap: 34px;
 	}
+	.text-img-sec .gray-graditent br {
+		display: none;
+	}
 }
 
 @media screen and (max-width:768px){
