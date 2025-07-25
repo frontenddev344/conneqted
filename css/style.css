@@ -1145,6 +1145,7 @@ font-family: 'Helvetica Neue';
 .vertical-common-layout .vertical-feature-card-container {
     flex-direction: column;
     row-gap: 52px;
+    max-width: 640px;
 }
 .vertical-common-layout .vertical-feature-card {
     width: 100%;
