@@ -553,7 +553,7 @@ span.highlight {
 
 .text-img-content .sub-title:not(:last-child) {
     margin-bottom: 32px;
-    max-width: 610px;
+    max-width: 650px;
 }
 .text-img-content .icon-with-text .text p {
     font-size: 24px;
@@ -1175,5 +1175,8 @@ font-family: 'Helvetica Neue';
 .text-img-sec h5.section-title {
     font-size: 24px;
     margin-bottom: 32px;
+}
+.automate-page .banner-content {
+    padding-bottom: 124px;
 }
 /* automate page end  */
