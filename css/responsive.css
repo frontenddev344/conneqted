@@ -75,7 +75,9 @@
 	.automate-page .banner-img {
 		height: 850px;
 	}
-	
+	.vertical-common-layout.vertical-space .text-img-sec h2.section-title {
+		font-size: 74px;
+	}
 }
 @media screen and (max-width:1400px){
 	.container {
@@ -190,6 +192,9 @@
 	}
 	.text-img-sec .section-title {
 		margin-bottom: 24px;
+	}
+	.vertical-common-layout.vertical-space .text-img-sec h2.section-title {
+		font-size: 64px;
 	}
 
 }
@@ -368,6 +373,9 @@
 	}
 	.automate-page .banner-img {
 		height: 750px;
+	}
+	.vertical-common-layout.vertical-space .text-img-sec h2.section-title {
+		font-size: 58px;
 	}
 
 }
@@ -561,6 +569,9 @@
 	.automate-page .banner-content p:not(:last-child) {
 		margin-bottom: 18px;
 	}
+	.vertical-common-layout.vertical-space .text-img-sec h2.section-title {
+		font-size: 48px;
+	}
 }
 
 @media screen and (max-width:768px){
@@ -719,6 +730,9 @@
 	.automate-page .vertical-feature-card-container .section-title {
 		margin-bottom: 0;
 	}
+	.vertical-common-layout.vertical-space .text-img-sec h2.section-title {
+		font-size: 42px;
+	}
 }
 
 @media screen and (max-width:575px){
@@ -855,6 +869,9 @@
 	.heading-deatils {
 		margin: 0 auto 24px;
 	}
+	.vertical-common-layout.vertical-space .text-img-sec h2.section-title {
+		font-size: 36px;
+	}
 }
 
 @media screen and (max-width:480px){
@@ -916,5 +933,8 @@
 	}
 	.site-banner {
 		margin-bottom:0;
+	}
+	.vertical-common-layout.vertical-space .text-img-sec h2.section-title {
+		font-size: 30px;
 	}
 }

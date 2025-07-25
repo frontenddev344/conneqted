@@ -955,6 +955,10 @@ font-family: 'Helvetica Neue';
 .vertical-common-layout .text-img-sec:nth-child(odd) .text-img-content {
     margin-left: auto;
 }
+.vertical-common-layout.vertical-space .text-img-sec h2.section-title {
+    font-size: 84px;
+    max-width: 700px;
+}
 .btn-details {
     text-align: center;
     margin: 64px 0;
