@@ -527,7 +527,9 @@ span.highlight {
 }
 /* site banner end */
 /* text-img-sec start  */
-
+.text-img-sec{
+    position: relative;
+}
 .text-img-sec .grid {
     grid-gap: 15px;
     align-items: center;
@@ -1096,3 +1098,64 @@ font-family: 'Helvetica Neue';
     font-size: 84px;
 }
 /* connect internal page end  */
+
+/* automate page start  */
+.automate-page .vertical-feature-card {
+    width: calc(100% / 4 - 24px);
+}
+.automate-page .smart-doors .section-title {
+    max-width: 100%;
+    text-align: center;
+}
+.automate-page .vertical-feature-card-container .section-title {
+    font-size: 84px;
+}
+.automate-page .vertical-feature-card-container .heading-deatils {
+    max-width: 100%;
+}
+.automate-page .vertical-feature-card-container .section-title {
+    font-size: 84px;
+    max-width: 1150px;
+}
+.top_box > h3 {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    max-width: 900px;
+    text-wrap: balance;
+}
+.bg-white p {
+    color: var(--black);
+}
+.text-img-sec h4.section-title {
+    font-size: 44px;
+    max-width: 600px;
+}
+.vertical-common-layout.vertical-space {
+    padding: 84px 0;
+    gap: 164px;
+}
+.vertical-common-layout .vertical-feature-card-container {
+    flex-direction: column;
+    row-gap: 52px;
+}
+.vertical-common-layout .vertical-feature-card {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    gap: 24px;
+}
+.text-img-content h6 {
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 32px;
+}
+.text-img-sec h5.section-title {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+/* automate page end  */

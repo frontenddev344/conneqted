@@ -12,6 +12,9 @@
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
 		font-size: 76px;
 	}
+	.automate-page .vertical-feature-card-container .section-title {
+		font-size: 76px;
+	}
 	.text-img-sec .gray-graditent {
 		font-size: 74px;
 	}
@@ -51,6 +54,21 @@
 	.comparison-row > div {
 		padding: 22px 32px;
 	}
+	.banner-content h5 {
+		font-size: 58px;
+	}
+	.top_box > h3 {
+		font-size: 48px;
+	}
+	.text-img-sec h4.section-title {
+		font-size: 38px;
+	}
+	.vertical-common-layout .vertical-feature-card-container {
+		row-gap: 44px;
+	}
+	.vertical-common-layout.vertical-space {
+		gap: 124px;
+	}
 	
 }
 @media screen and (max-width:1400px){
@@ -70,8 +88,11 @@
 	.section-title {
 		font-size: 58px;
 	}
-	.ai-powered-cameras .section-title {
-		font-size: 70px;
+	.ai-powered-cameras .section-title, .effortless-security .section-title {
+		font-size: 64px;
+	}
+	.automate-page .vertical-feature-card-container .section-title {
+		font-size: 64px;
 	}
 	.sub-title {
 		font-size: 24px;
@@ -96,6 +117,9 @@
 		gap: 24px;
 	}
 	p {
+		font-size: 22px;
+	}
+	.text-img-content h6 {
 		font-size: 22px;
 	}
 	.text-img-content .icon-with-text .text p {
@@ -141,6 +165,22 @@
 	}
 	.text-img-sec .gray-graditent {
 		font-size: 64px;
+	}
+	.banner-content h5 {
+		font-size: 48px;
+	}
+	.top_box > h3 {
+		font-size: 38px;
+	}
+	.text-img-sec h4.section-title {
+		font-size: 34px;
+	}
+	.vertical-common-layout .vertical-feature-card-container {
+		row-gap: 38px;
+	}
+	.vertical-common-layout.vertical-space {
+		gap: 84px;
+		padding: 64px 0;
 	}
 
 }
@@ -220,7 +260,10 @@
 		font-size: 64px;
 	}
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
-		font-size: 64px;
+		font-size: 60px;
+	}
+	.automate-page .vertical-feature-card-container .section-title {
+		font-size: 60px;
 	}
 	.text-img-sec .gray-graditent {
 		font-size: 52px;
@@ -287,6 +330,30 @@
 	.text-img-content > span {
 		font-size: 20px;
 	}
+	.banner-content h5 {
+		font-size: 42px;
+	}
+	.top_box > h3 {
+		font-size: 32px;
+	}
+	.text-img-sec h4.section-title {
+		font-size: 30px;
+		margin-bottom: 32px;
+	}
+	.vertical-common-layout .vertical-feature-card-container {
+		row-gap: 32px;
+	}
+	.vertical-common-layout .vertical-feature-card-container {
+		row-gap: 32px;
+	}
+	.vertical-common-layout.vertical-space {
+		gap: 64px;
+		padding: 44px 0;
+	}
+	.vertical-common-layout {
+		padding-bottom: 44px;
+		gap: 44px;
+	}
 
 }
 
@@ -334,7 +401,10 @@
 		text-wrap: balance;
 	}
 	.ai-powered-cameras .section-title , .effortless-security .section-title{
-		font-size: 60px;
+		font-size: 54px;
+	}
+	.automate-page .vertical-feature-card-container .section-title {
+		font-size: 54px;
 	}
 	.text-img-sec .gray-graditent {
 		font-size: 48px;
@@ -432,7 +502,32 @@
 		height: 40px;
 		font-size: 14px;
 	}
-	
+	.banner-content h5 {
+		font-size: 38px;
+	}
+	.top_box > h3 {
+		font-size: 28px;
+	}
+	.text-img-sec h4.section-title {
+		font-size: 28px;
+		margin-bottom: 24px;
+	}
+	.vertical-common-layout .vertical-feature-card-container {
+		row-gap: 24px;
+	}
+	.text-img-content h6 {
+		font-size: 20px;
+	}
+	.vertical-common-layout .vertical-feature-card-container {
+		row-gap: 28px;
+	}
+	.vertical-common-layout.vertical-space {
+		gap: 34px;
+	}
+	.vertical-common-layout {
+		padding-bottom: 34px;
+		gap: 34px;
+	}
 }
 
 @media screen and (max-width:768px){
@@ -468,7 +563,10 @@
 		padding: 12px 24px 12px 24px;
 	}
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
-		font-size: 54px;
+		font-size: 48px;
+	}
+	.automate-page .vertical-feature-card-container .section-title {
+		font-size: 48px;
 	}
 	.text-img-sec .gray-graditent {
 		font-size: 44px;
@@ -567,6 +665,21 @@
 	.network-comparison {
 		padding: 64px 0 0;
 	}
+	.banner-content h5 {
+		font-size: 34px;
+	}
+	.top_box > h3 {
+		font-size: 24px;
+	}
+	.text-img-sec h4.section-title {
+		font-size: 26px;
+	}
+	.text-img-content h6 {
+		font-size: 18px;
+	}
+	.vertical-common-layout .vertical-feature-card-container {
+		row-gap: 24px;
+	}
 }
 
 @media screen and (max-width:575px){
@@ -593,6 +706,9 @@
 		margin-bottom: 64px;
 	}
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
+		font-size: 38px;
+	}
+	.automate-page .vertical-feature-card-container .section-title {
 		font-size: 38px;
 	}
 	.text-img-sec .gray-graditent {
@@ -642,8 +758,8 @@
 		margin-bottom: 24px;
 	}
 	.vertical-common-layout {
-		padding-bottom: 44px;
-		gap: 44px;
+		padding-bottom: 30px;
+		gap: 30px;
 	}
 	.ai-powered-cameras {
 		padding-bottom: 44px;
@@ -656,6 +772,32 @@
 	}
 	.network-comparison p {
 		font-size: 18px;
+	}
+	.banner-content h5 {
+		font-size: 28px;
+	}
+	.top_box > h3 {
+		font-size: 22px;
+	}
+	.text-img-sec h4.section-title {
+		font-size: 24px;
+	}
+	.vertical-common-layout .vertical-feature-card {
+		flex-wrap: wrap;
+		gap: 0;
+		justify-content: center;
+	}
+	.text-img-sec h4.section-title {
+		text-align: center;
+	}
+	.vertical-feature-card .text-content h4 {
+		text-align: center;
+	}
+	.vertical-feature-card .text-content p {
+		text-align: center;
+	}
+	.text-img-sec .section-title {
+		margin-bottom: 24px;
 	}
 }
 
@@ -701,10 +843,16 @@
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
 		font-size: 34px;
 	}
+	.automate-page .vertical-feature-card-container .section-title {
+		font-size: 34px;
+	}
 	.text-img-sec .gray-graditent {
 		font-size: 34px;
 	}
 	.network-comparison p {
 		font-size: 16px;
+	}
+	.text-img-sec h4.section-title {
+		font-size: 22px;
 	}
 }
