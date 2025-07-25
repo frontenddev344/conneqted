@@ -72,6 +72,9 @@
 	.text-img-sec .section-title {
 		margin-bottom: 44px;
 	}
+	.automate-page .banner-img {
+		height: 850px;
+	}
 	
 }
 @media screen and (max-width:1400px){
@@ -363,6 +366,9 @@
 	.text-img-sec h5.section-title {
 		font-size: 22px;
 	}
+	.automate-page .banner-img {
+		height: 750px;
+	}
 
 }
 
@@ -548,6 +554,9 @@
 	}
 	.top_box {
 		margin: 20px auto 0;
+	}
+	.automate-page .banner-img {
+		height: auto;
 	}
 }
 
