@@ -531,7 +531,7 @@ span.highlight {
     position: relative;
 }
 .text-img-sec .grid {
-    grid-gap: 15px;
+    grid-gap: 35px;
     align-items: center;
 }
 
