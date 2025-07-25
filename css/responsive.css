@@ -371,7 +371,7 @@
 		max-width: calc(100% - 30px);
 	}
 	.site-banner {
-		margin-bottom: 124px;
+		margin-bottom: 84px;
 	}
 	.site-banner .grid {
 		grid-template-columns: 100%;
@@ -557,7 +557,7 @@
 		font-size: 20px;
 	}
 	.site-banner {
-		margin-bottom: 84px;
+		margin-bottom: 54px;
 	}
 	.heading-deatils {
 		margin: 0 auto 44px;
@@ -709,7 +709,7 @@
 		display: none;
 	}
 	.site-banner {
-		margin-bottom: 64px;
+		margin-bottom: 34px;
 	}
 	.ai-powered-cameras .section-title, .effortless-security .section-title {
 		font-size: 38px;
@@ -805,6 +805,9 @@
 	.text-img-sec .section-title {
 		margin-bottom: 24px;
 	}
+	.text-img-content > span {
+		font-size: 18px;
+	}
 	.vs span {
 		width: 32px;
 		height: 32px;
@@ -819,8 +822,11 @@
 }
 
 @media screen and (max-width:480px){
+	.banner-content h1 {
+		font-size: 34px;
+	}
 	.section-title {
-		font-size: 32px;
+		font-size: 30px;
 	}
 	.banner-content p {
 		font-size: 18px;
@@ -871,5 +877,8 @@
 	}
 	.text-img-sec h4.section-title {
 		font-size: 22px;
+	}
+	.site-banner {
+		margin-bottom:0;
 	}
 }
