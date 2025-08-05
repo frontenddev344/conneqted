@@ -428,6 +428,12 @@ span.highlight {
     letter-spacing: -1px;
 }
 
+.gray-graditent {
+    background: linear-gradient(84.47deg, #595661 0.21%, #FFFFFF 43.01%, #363149 85.81%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 /* site banner start  */
 .site-banner {
