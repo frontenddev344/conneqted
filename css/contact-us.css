@@ -24,6 +24,7 @@
 }
 .contact-features li {
     display: flex;
+    align-items: center;
     gap: 12px;
 }
 .contact-features li h5 {
@@ -50,6 +51,7 @@
     line-height: 110%;
     letter-spacing: -0.02em;
     font-weight: 400;
+    max-width: max-content;
 }
 .contact-details ul {
     display: grid;
@@ -66,6 +68,7 @@
 }
 .contact-details li .contact-icon {
     max-width: 28px;
+    flex-shrink: 0;
 }
 .contact-details li a, .contact-details li p {
     color: #ffffff;
@@ -77,6 +80,16 @@
 .contact-details li a strong, .contact-details li p strong {
     font-weight: 500;
     margin-left: 10px;
+}
+.contact-form {
+    position: relative;
+    isolation: isolate;
+}
+.contact-shape {
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    z-index: -1;
 }
 .contact-form label {
     color: #ffffff;
@@ -164,11 +177,29 @@
     .contact-sec-wrap {
         padding: 42px;
     }
+    .contact-section .grid {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .contact-details li a, .contact-details li p {
+        font-size: 22px;
+    }
+    .contact-features li h5 {
+        font-size: 22px;
+    }
+    .general-contact-info h3.section-title {
+        font-size: 34px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    .contact-section {
+        padding-top: 150px;
+    }
     .contact-section .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
     .contact-sec-wrap {
         padding: 48px;
@@ -176,5 +207,75 @@
     .contact-features {
         margin: 24px 0;
     }
+    .contact-details li a, .contact-details li p {
+        font-size: 20px;
+    }
+    .contact-features li h5 {
+        font-size: 20px;
+    }
+    .form-btm {
+        gap: 20px;
+    }
 
+}
+@media screen and (max-width: 768px){
+    .contact-section {
+        padding-top: 120px;
+    }
+    .contact-sec-wrap {
+        padding: 24px;
+    }
+    .general-contact-info h3.section-title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .form-btm {
+        flex-direction: column;
+    }
+    .form-btm .form-note {
+        text-align: center;
+        text-wrap: balance;
+    }
+    .contact-details li a, .contact-details li p {
+        font-size: 18px;
+    }
+    .contact-features li h5 {
+        font-size: 18px;
+        line-height: 1;
+    }
+    .general-contact-info h3.section-title {
+        font-size: 24px;
+    }
+    .form-group:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .contact-form .form-control {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+    .contact-details li .contact-icon {
+        max-width: 20px;
+    }
+    .contact-features li .feature-dot {
+        max-width: 20px;
+    }
+    .contact-details li a, .contact-details li p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px){
+    .contact-sec-wrap {
+        padding: 16px;
+    }
+    .contact-details li a strong, .contact-details li p strong {
+        margin-left: 8px;
+    }
+    .contact-details li a, .contact-details li p {
+        word-break: break-all;
+    }
+    .contact-form label {
+        font-size: 16px;
+    }
 }
