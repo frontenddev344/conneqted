@@ -63,26 +63,28 @@
 }
 .about-founders .founder {
     position: relative;
+    display: flex;
 }
 .founder .founder-info {
-    position: absolute;
-    top: 160px;
-    right: 80px;
-    z-index: -1;
     text-align: center;
+    margin-top: 150px;
+    margin-left: -150px;
 }
 .about-founders .founder img {
     display: block;
 }
-.about-founders .founder-img-reverse img {
+/* .about-founders .founder-img-reverse img {
     margin-left: auto;
+} */
+
+.about-founders .founder-img-reverse {
+    flex-direction: row-reverse;
 }
 
 .about-founders .founder-img-reverse .founder-info {
-    right: auto;
-    left: 80px;
+    margin-left: 0;
+    margin-right: -150px;
 }
-
 .about-banner-bottom p {
     font-size: 32px;
     text-align: center;
@@ -135,6 +137,9 @@
 .process-step-content p:not(:last-child) {
     margin-bottom: 16px;
 }
+.process-step-content p {
+    font-size: 24px;
+}
 .process-step-content ul {
     list-style-type: disc;
     padding-left: 34px;
@@ -171,4 +176,167 @@ img.process-step-shape {
     right: 0;
     height: 100%;
     z-index: -1;
+}
+@media screen and (max-width: 1600px){
+    .about-banner .section-title {
+        font-size: 84px;
+    }
+    .about-banner-content p {
+        font-size: 28px;
+    }
+    .about-banner-bottom p {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .about-banner .section-title {
+        font-size: 72px;
+    }
+    .about-founders .founder-name {
+        font-size: 20px;
+    }
+    .about-banner-content p {
+        font-size: 24px;
+    }
+    .about-banner-bottom p {
+        font-size: 24px;
+    }
+    .about-banner-content .sub-title {
+        margin-bottom: 44px;
+    }
+    .about-founders {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 1200px){
+    
+    .about-banner .section-title {
+        font-size: 64px;
+    }
+    .about-founders .founder {
+        display: block;
+    }
+    .founder-info .founder-signature {
+        max-width: 180px;
+    }
+    .founder .founder-info {
+        margin: 0 0 20px;
+    }
+    .about-founders .founder img {
+        margin: 0 auto;
+    }
+    .about-founders .founder-img-reverse .founder-info {
+        margin-right: 0;
+    }
+    .process-step-number {
+        padding-right: 40px;
+    }
+    .our-process-section {
+        padding: 84px 0;
+    }
+    .process-step-content .gray-graditent {
+        font-size: 44px;
+    }
+    .process-step-content li {
+        font-size: 22px;
+    }
+    .process-step-content p {
+        font-size: 22px;
+    }
+    
+}
+
+@media screen and (max-width: 991px){
+    .about-banner .section-title {
+        font-size: 58px;
+    }
+    .about-banner-content p {
+        font-size: 22px;
+    }
+    .about-banner-bottom p {
+        font-size: 22px;
+    }
+    .process-step-number {
+        padding-right: 0;
+        justify-content: center;
+    }
+    .process-step {
+        padding: 24px;
+    }
+    .our-process-section {
+        padding: 64px 0;
+    }
+    .process-step-content .gray-graditent {
+        font-size: 38px;
+    }
+    .process-step-container {
+        row-gap: 20px;
+    }
+    .our-process-section .section-title {
+        margin-bottom: 44px;
+    }
+}
+@media screen and (max-width: 768px){
+    .about-banner .section-title {
+        font-size: 52px;
+    }
+    .about-banner-content p {
+        font-size: 20px;
+    }
+    .about-banner-bottom p {
+        font-size: 20px;
+    }
+    .about-banner-content .sub-title {
+        margin-bottom: 24px;
+    }
+    .process-step-inner {
+        grid-template-columns: 100%;
+    }
+    .process-step-number {
+        justify-content: start;
+    }
+    .process-step-content .gray-graditent {
+        font-size: 34px;
+    }
+    .process-step-number span {
+        font-size: 84px;
+    }
+    .our-process-section .section-title {
+        margin-bottom: 34px;
+    }
+}
+@media screen and (max-width: 575px){
+    .about-banner .section-title {
+        font-size: 44px;
+    }
+    .about-banner-content p {
+        font-size: 18px;
+    }
+    .about-banner-bottom p {
+        font-size: 18px;
+    }
+    .about-founders {
+        grid-template-columns: 100%;
+    }
+    .process-step-content .gray-graditent {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .process-step-content p {
+        font-size: 20px;
+    }
+    .process-step-content li {
+        font-size: 20px;
+    }
+    .process-step-number span {
+        font-size: 68px;
+    }
+    .our-process-section .section-title {
+        margin-bottom: 24px;
+    }
+}
+@media screen and (max-width: 480px){
+    .about-banner .section-title {
+        font-size: 34px;
+    }
 }
