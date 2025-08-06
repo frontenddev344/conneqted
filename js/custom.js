@@ -77,3 +77,25 @@ var typing=new Typed(".reveal-text", {
   backSpeed: 40,
   loop: true,
 });
+
+
+const smartEle = document.querySelectorAll(".home-banner-smart-ele");
+const total = smartEle.length;
+
+function setRandomActive() {
+  const randomIndex = Math.floor(Math.random() * total);
+
+  smartEle.forEach((item, index) => {
+    if (index === randomIndex) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
+  });
+}
+
+// Run once initially
+setRandomActive();
+
+// Change every 2 seconds
+setInterval(setRandomActive, 2000);

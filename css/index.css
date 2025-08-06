@@ -11,6 +11,7 @@
       letter-spacing: -0.02em;
       font-weight: 300;
       text-transform: capitalize;
+      min-height: 130px;
 }
 
 .home-banner-content .section-title {
@@ -23,8 +24,31 @@
     margin-top: 72px;
 }
 
+.home-banner-smart-ele-img {
+    width: 72px;
+    border: 6px solid #fff;
+    border-radius: 36px;
+}
 
-
+.home-banner-smart-ele p {
+    font-size: 16px;
+    max-width: 200px;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.home-banner-smart-ele.active p {
+    opacity: 1;
+}
+.home-banner-right {
+    position: relative;
+}
+.home-banner-smart-ele-wrap {
+    position: absolute;
+    top: 0;
+    right:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 
 
