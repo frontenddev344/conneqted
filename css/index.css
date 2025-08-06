@@ -1,0 +1,374 @@
+
+.home-banner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.reveal-text{
+      border-right: 2px solid #fff;
+      font-size: 108px;
+      width: max-content;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      font-weight: 300;
+      text-transform: capitalize;
+}
+
+.home-banner-content .section-title {
+    font-size: 108px;
+    max-width: max-content;
+    margin-bottom: 72px;
+}
+
+.home-banner-content .primary-btn {
+    margin-top: 72px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stack-scroll-container {
+    position: relative;
+    overflow: hidden;
+}
+.stack-card {
+    border-radius: 4px;
+    padding: 72px 52px 72px 52px;
+    background: linear-gradient(90deg, rgba(93, 88, 111, 1) 0%, rgba(32, 28, 48, 1) 100%);
+    width: 100%;
+    max-width: 814px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* testimonials start  */
+.testimonials {
+    background: #fff;
+    padding: 124px 0;
+}
+
+.testimonials-header {
+    margin-bottom: 84px;
+}
+.testimonials-header .section-title {
+    font-size: 44px;
+    max-width: max-content;
+    margin: 0 auto;
+}
+.testimonials-header h2 {
+    color: #171325;
+    text-align: center;
+    font-size: 84px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+.testimonials-header p {
+    color: #171325;
+    max-width: 1220px;
+    margin: 0 auto;
+    text-align: center;
+}
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.testimonial-card {
+    border-radius: 4px;
+    border: 2px solid #dcdae2;
+    padding: 64px;
+    display: grid;
+    gap: 32px;
+}
+
+.testimonial-card p {
+    color: #171325;
+    text-align: left;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+}
+.testimonial-author {
+    color: #171325;
+    text-align: left;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+}
+
+.testimonial-user {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+}
+.testimonial-user img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* testimonials end  */
+
+/* faq start  */
+.faq {
+    background: #fff;
+    padding: 24px 0;
+}
+.acc-container {
+    width: 100%;
+  }
+  
+  
+  .acc-head {
+    padding: 32px 0 0;
+    margin-top: 32px;
+    font-size: 22px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dcdae2;
+    align-items: center;
+}
+
+.acc-head .icon {
+    width: 39px;
+    height: 39px;
+    min-width: 39px;
+}
+.acc-head .icon span::before, .acc-head .icon span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background: linear-gradient(90deg, #445DF4 0%, #DA5870 100%);
+    transition: all .3s linear;
+    border-radius: 2px;
+}
+
+.acc-head .icon span::before {
+    right: 50%;
+    width: 2px;
+    height: 20px;
+    margin-top: -10px;
+    transform: translate(1px, 0);
+}
+  
+.acc-head .icon span::after {
+    right: 50%;
+    width: 20px;
+    height: 2px;
+    margin-top: -1px;
+    transform: translate(50%, 0);
+}
+  /* .acc-head.active .icon span::before, .acc-head.active .icon span::after {
+    background: #73AD59;
+} */
+  .acc-head p {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .acc-content {
+    display: none;
+}
+          
+  .acc-head.active .icon span::before {
+      transform: rotate(90deg);
+  }
+  
+.acc-content p {
+    color: #171325;
+    text-align: left;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+}
+.acc-head h4 {
+    color: #171325;
+    text-align: left;
+    font-size: 36px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.acc-container .acc:first-child .acc-head {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* faq end  */
+/* site footer start  */
+.site-footer {
+    background: linear-gradient(90deg, rgba(68, 93, 244, 1) 0%, rgba(218, 88, 112, 1) 100%);
+    padding: 64px 0 0;
+}
+.footer-links li a {
+    color: #ffffff;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 84px;
+    margin-bottom: 84px;
+}
+.footer-links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.social-links li a {
+    width: 56px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.2s linear;
+}
+
+.social-links li a::before, .social-links li a::after, .social-links li a span::before, .social-links li a span::after {
+    content: '';
+    position: absolute;
+    width: 15.5px;
+    height: 15.5px;
+    border: 1px solid white;
+    transition: all 0.2s linear;
+}
+.social-links li a::before {
+    top: -1px;
+    left: -1px;
+    border-right: none;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+}
+.social-links li a::after {
+    bottom: -1px;
+    right: -1px;
+    border-left: none;
+    border-top: none;
+    border-bottom-right-radius: 4px;
+}
+.social-links li a span::before {
+    bottom: -1px;
+    left: -1px;
+    border-right: none;
+    border-top: none;
+    border-bottom-left-radius: 4px;
+}
+.social-links li a span::after {
+    top: -1px;
+    right: -1px;
+    border-left: none;
+    border-bottom: none;
+    border-top-right-radius: 4px;
+}
+
+.social-links li a:hover {
+    box-shadow: 0px 4px 72px 0px rgba(255, 255, 255, 0.25);
+}
+
+.social-links li a:hover::before {
+    top: 5px;
+    left: 5px;
+}
+
+.social-links li a:hover::after {
+    bottom: 5px;
+    right: 5px;
+}
+.social-links li a:hover span::before {
+    left: 5px;
+    bottom: 5px;
+}
+.social-links li a:hover span::after {
+    top: 5px;
+    right: 5px;
+}
+
+/* site footer end  */
