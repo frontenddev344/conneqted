@@ -52,7 +52,18 @@
 
 
 
-
+.stack-card-feature {
+    display: flex;
+    gap: 52px;
+    justify-content: center;
+    align-items: center;
+}
+.stack-card-feature-item {
+    text-align: center;
+}
+.stack-card .primary-btn {
+    background: rgb(23 19 38 / 10%);
+}
 
 
 
