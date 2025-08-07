@@ -137,7 +137,7 @@
     justify-content: end;
 }
 .site-header-right .social-links li a {
-    background: #171325;
+    background: #1713258c;
 }
 
 
@@ -183,7 +183,7 @@
 }
 .graditent-shape {
     position: absolute;
-    top: -60%;
+    top: -220px;
     right: -100px;
     z-index: -1;
 }
