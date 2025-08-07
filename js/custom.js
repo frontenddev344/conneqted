@@ -32,25 +32,6 @@ $(".acc-head").click(function(){
 });
 
 
-
-// Add animations to the timeline
-// const tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".stack-scroll-container",
-//     start: "top top",
-//     end: "bottom center",
-//     scrub: 1,
-//     pin: true,
-//     pinSpacing: true,
-//     // markers: true
-//   }
-// });
-
-// tl.to(".stack-card", {
-//   yPercent: -100,
-
-// })
-
 gsap.registerPlugin(ScrollTrigger);
 
 document.querySelectorAll(".stack-scroll-container").forEach((section) => {
