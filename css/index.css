@@ -54,7 +54,7 @@
 }
 .home-banner-right {
     position: relative;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 .home-banner-smart-ele-wrap {
     position: absolute;
@@ -64,8 +64,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     min-height: 400px;
+    display: none;
 }
-
+.home-banner-right img {
+    width: 100%;
+}
 
 .stack-scroll-container img {
     width: 100%;
@@ -176,13 +179,18 @@
 }
 .home-banner-wrap {
     position: relative;
+    isolation: isolate;
 }
 .graditent-shape {
     position: absolute;
     top: -60%;
     right: -100px;
+    z-index: -1;
 }
 
+.home-banner-wrap .grid {
+    grid-template-columns: 40% 60%;
+}
 
 
 
@@ -476,6 +484,13 @@
     .acc-head h4 {
         font-size: 32px;
     }
+    .home-banner-content .section-title {
+        font-size: 88px;
+    }
+    .reveal-text {
+        font-size: 88px;
+        min-height: 106px;
+    }
 }
 @media screen and (max-width: 1400px){
     .stack-card h3.gray-graditent {
@@ -495,6 +510,13 @@
     }
     .acc-head h4 {
         font-size: 28px;
+    }
+    .home-banner-content .section-title {
+        font-size: 74px;
+    }
+    .reveal-text {
+        font-size: 74px;
+        min-height: 90px;
     }
 }
 @media screen and (max-width: 1200px){
@@ -546,9 +568,28 @@
     .stack-card h5.section-title {
         font-size: 34px;
     }
+    .home-banner-content .section-title {
+        font-size: 64px;
+    }
+    .reveal-text {
+        font-size: 64px;
+        min-height: 77px;
+    }
+    .home-banner-content .section-title {
+        margin-bottom: 52px;
+    }
+    .home-banner-content .primary-btn {
+        margin-top: 52px;
+    }
+    .home-banner {
+        padding-bottom: 120px;
+    }
     
 }
 @media screen and (max-width: 991px){
+    .home-banner {
+        padding-bottom: 40px;
+    }
     .stack-card h3.gray-graditent {
         font-size: 54px;
     }
@@ -579,6 +620,17 @@
     }
     .stack-card h5.section-title {
         font-size: 30px;
+    }
+    .home-banner-wrap .grid {
+        grid-template-columns: 100%;
+        gap: 40px;
+    }
+    .home-banner-content .section-title {
+        font-size: 54px;
+    }
+    .reveal-text {
+        font-size: 54px;
+        min-height: 66px;
     }
 }
 @media screen and (max-width: 768px){
@@ -612,8 +664,18 @@
         width: 46px;
         height: 46px;
     }
+    .social-links li a img {
+        max-width: 24px;
+    }
     .testimonials-header .section-title {
         font-size: 34px;
+    }
+    .home-banner-content .section-title {
+        font-size: 44px;
+    }
+    .reveal-text {
+        font-size: 44px;
+        min-height: 53px;
     }
 }
 @media screen and (max-width: 575px){
@@ -658,6 +720,9 @@
     }
     .testimonials-header .section-title {
         font-size: 30px;
+    }
+    .footer-links li a {
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 480px){
