@@ -5,6 +5,9 @@
     overflow: hidden;
     /* display: none; */
 }
+.home-banner-content p {
+    max-width: 450px;
+}
 .reveal-text{
       border-right: 2px solid #fff;
       font-size: 108px;
@@ -589,6 +592,9 @@
 @media screen and (max-width: 991px){
     .home-banner {
         padding-bottom: 40px;
+    }
+    .home-banner-content p {
+        font-size: 20px;
     }
     .stack-card h3.gray-graditent {
         font-size: 54px;
