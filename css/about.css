@@ -196,6 +196,9 @@ img.process-step-shape {
     .about-banner-bottom p {
         font-size: 28px;
     }
+    .about-banner-content p:not(.sub-title) {
+        font-size: 28px;
+    }
 }
 @media screen and (max-width: 1400px){
     .about-banner .section-title {
@@ -215,6 +218,9 @@ img.process-step-shape {
     }
     .about-founders {
         margin-top: 40px;
+    }
+    .about-banner-content p:not(.sub-title) {
+        font-size: 24px;
     }
 }
 @media screen and (max-width: 1200px){
@@ -284,6 +290,9 @@ img.process-step-shape {
     .our-process-section .section-title {
         margin-bottom: 44px;
     }
+    .about-banner-content p:not(.sub-title) {
+        font-size: 22px;
+    }
 }
 @media screen and (max-width: 768px){
     .about-banner .section-title {
@@ -312,6 +321,9 @@ img.process-step-shape {
     }
     .our-process-section .section-title {
         margin-bottom: 34px;
+    }
+    .about-banner-content p:not(.sub-title) {
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 575px){
@@ -342,6 +354,9 @@ img.process-step-shape {
     }
     .our-process-section .section-title {
         margin-bottom: 24px;
+    }
+    .about-banner-content p:not(.sub-title) {
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 480px){
