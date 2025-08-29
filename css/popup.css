@@ -1,4 +1,5 @@
 .common-modal .modal-dialog {
+    width: calc(100% - 40px);
     max-width: 1229px;
 }
 
@@ -55,6 +56,10 @@
     font-weight: 300;
 }
 
+h2.common-modal-title {
+    font-size: 84px;
+}
+
 .common-modal-title:last-child {
     margin-bottom: 0;
 }
@@ -88,6 +93,7 @@
     letter-spacing: -2px;
     font-size: 36px;
     font-weight: 300;
+    margin-bottom: 12px;
 }
 .common-modal-desc {
     font-size: 36px;
@@ -112,4 +118,137 @@
     line-height: 110%;
     letter-spacing: -0.02em;
     font-weight: 300;
+}
+
+@media screen and (max-width: 1600px) {
+    .common-modal .common-modal-body {
+        padding: 84px;
+    }
+    h2.common-modal-title {
+        font-size: 64px;
+        text-wrap: balance;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .common-modal-desc {
+        font-size: 32px;
+    }
+    .common-modal-list-content h4 {
+        font-size: 32px;
+    }
+    .common-modal-title {
+        font-size: 44px;
+    }
+    h2.common-modal-title {
+        font-size: 52px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    h2.common-modal-title {
+        font-size: 44px;
+        margin-bottom: 44px;
+    }
+    .common-modal-hr {
+        margin: 44px 0;
+    }
+    .common-modal-desc {
+        font-size: 28px;
+        margin: 44px 0;
+    }
+    .common-modal-list li:not(:last-child) {
+        margin-bottom: 44px;
+    }
+    .common-modal .common-modal-body {
+        padding: 64px;
+    }
+    .common-modal-list-content h4 {
+        font-size: 28px;
+    }
+    .common-modal-title {
+        font-size: 40px;
+        margin-bottom: 44px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .common-modal .common-modal-body {
+        padding: 44px;
+    }
+    .common-modal-desc {
+        font-size: 24px;
+        margin: 34px 0;
+    }
+    .common-modal-list-content h4 {
+        font-size: 24px;
+    }
+    .common-modal-icon {
+        width: 54px;
+        height: 54px;
+    }
+    h2.common-modal-title {
+        font-size: 36px;
+        margin-bottom: 34px;
+    }
+    .common-modal-list li:not(:last-child) {
+        margin-bottom: 34px;
+    }
+    .common-modal-hr {
+        margin: 34px 0;
+    }
+    .common-modal-title {
+        font-size: 32px;
+        margin-bottom: 34px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .common-modal .common-modal-body {
+        padding: 34px;
+    }
+    .common-modal-icon {
+        width: 44px;
+        height: 44px;
+    }
+    .common-modal-desc {
+        font-size: 22px;
+        margin: 24px 0;
+    }
+    .common-modal-hr {
+        margin: 24px 0;
+    }
+    .common-modal-list li:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    .common-modal-list-content h4 {
+        font-size: 22px;
+    }
+    .common-modal-list li {
+        gap: 24px;
+    }
+    h2.common-modal-title {
+        font-size: 30px;
+        margin-bottom: 24px;
+    }
+    .common-modal-title {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .common-modal-desc {
+        font-size: 20px;
+    }
+    .common-modal-list-content h4 {
+        font-size: 20px;
+    }
+    .common-modal-icon {
+        width: 32px;
+        height: 32px;
+    }
+    .common-modal-title {
+        font-size: 24px;
+    }
 }
