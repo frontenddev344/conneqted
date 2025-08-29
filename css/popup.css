@@ -253,3 +253,8 @@ h2.common-modal-title {
         font-size: 24px;
     }
 }
+@media screen and (max-width: 480px){
+    .common-modal .common-modal-body {
+        padding: 34px 24px;
+    }
+}
