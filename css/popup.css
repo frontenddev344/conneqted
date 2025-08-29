@@ -26,6 +26,9 @@
     background-image: none;
     width: 44px;
     height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .common-modal .common-popup-image {
@@ -251,6 +254,12 @@ h2.common-modal-title {
     }
     .common-modal-title {
         font-size: 24px;
+    }
+    .common-modal .modal-body .btn-close {
+        right: 15px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
     }
 }
 @media screen and (max-width: 480px){
