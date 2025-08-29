@@ -1,0 +1,115 @@
+.common-modal .modal-dialog {
+    max-width: 1229px;
+}
+
+.common-modal .modal-content {
+    border-radius: 24px;
+    background: inherit;
+}
+
+.common-modal .modal-body {
+    padding: 0;
+    background: var(--black);
+    color: #fff;
+    border-radius: 0 0 24px 24px;
+}
+
+.common-modal .modal-body .btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: var(--black);
+    opacity: 1;
+    border-radius: 50%;
+    background-image: none;
+    width: 44px;
+    height: 44px;
+}
+
+.common-modal .common-popup-image {
+    border-radius: 24px 24px 0 0;
+}
+
+.common-modal .common-popup-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    max-height: 757px;
+}   
+
+.common-modal .common-modal-body {
+    padding: 124px;
+    border-radius: 0 0 24px 24px;
+}
+
+.common-modal-title {
+    margin-bottom: 64px;
+    background: linear-gradient(90deg, #445DF4 0%, #DA5870 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: capitalize;
+    font-size: 52px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+}
+
+.common-modal-title:last-child {
+    margin-bottom: 0;
+}
+
+.common-modal-hr {
+    color: #fff;
+    opacity: 0.20;
+    margin: 64px 0;
+}
+
+.common-modal-list li {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.common-modal-list li:not(:last-child) {
+    margin-bottom: 64px;
+}
+
+.common-modal-icon {
+    width: 84px;
+    height: 84px;
+    flex-shrink: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.common-modal-list-content h4 {
+    color: #fff;
+    letter-spacing: -2px;
+    font-size: 36px;
+    font-weight: 300;
+}
+.common-modal-desc {
+    font-size: 36px;
+    margin: 64px 0;
+}
+
+.common-modal-desc:first-child {
+    margin-top: 0;
+}
+.common-modal-desc:last-child {
+    margin-bottom: 0;
+}
+
+.common-modal .common-modal-body h5 {
+    margin-bottom: 64px;
+    background: linear-gradient(90deg, #445DF4 0%, #DA5870 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: capitalize;
+    font-size: 52px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+}
