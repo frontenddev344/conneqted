@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Services</title>
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Step 1: Service Selection -->
+        <div class="step step-1 active">
+            <div class="left-section">
+                <div class="house-container">
+                    <!-- Camera Systems - Image 1 -->
+                    <img class="house-image" id="img-camera-systems" src="images/connect1.png" alt="Camera systems and access control">
+
+                    <!-- Automation/Smart Home - Image 2 -->
+                    <img class="house-image" id="img-automation" src="images/connect2.png" alt="Automation/Smart Home" style="display: none;">
+
+                    <!-- Sound Systems - Image 3 -->
+                    <img class="house-image" id="img-sound-systems" src="images/connect3.png" alt="Sound systems" style="display: none;">
+
+                    <!-- Lighting & Decor - Image 4 -->
+                    <img class="house-image" id="img-lighting" src="images/connect4.png" alt="Lighting & Decor" style="display: none;">
+
+                    <!-- Networking - Image 5 -->
+                    <img class="house-image" id="img-networking" src="images/connect5.png" alt="Local Networking and WiFi" style="display: none;">
+
+                    <!-- Everything - Image 6 -->
+                    <img class="house-image" id="img-everything" src="images/connect6.png" alt="Everything (New build)" style="display: none;">
+                </div>
+            </div>
+
+            <div class="right-section">
+                <h2 class="heading">How we can help?</h2>
+                <ul class="services-list">
+                    <li class="service-item">
+                        <input type="radio" name="service" id="camera-systems" class="service-radio" value="camera-systems" checked>
+                        <label for="camera-systems" class="service-label selected">
+                            <span class="custom-radio"></span>
+                            <span class="service-text">Camera systems and access control</span>
+                        </label>
+                    </li>
+                    <li class="service-item">
+                        <input type="radio" name="service" id="automation" class="service-radio" value="automation">
+                        <label for="automation" class="service-label">
+                            <span class="custom-radio"></span>
+                            <span class="service-text">Automation/Smart Home</span>
+                        </label>
+                    </li>
+                    <li class="service-item">
+                        <input type="radio" name="service" id="sound-systems" class="service-radio" value="sound-systems">
+                        <label for="sound-systems" class="service-label">
+                            <span class="custom-radio"></span>
+                            <span class="service-text">Sound systems</span>
+                        </label>
+                    </li>
+                    <li class="service-item">
+                        <input type="radio" name="service" id="lighting" class="service-radio" value="lighting">
+                        <label for="lighting" class="service-label">
+                            <span class="custom-radio"></span>
+                            <span class="service-text">Lighting & Decor</span>
+                        </label>
+                    </li>
+                    <li class="service-item">
+                        <input type="radio" name="service" id="networking" class="service-radio" value="networking">
+                        <label for="networking" class="service-label">
+                            <span class="custom-radio"></span>
+                            <span class="service-text">Local Networking and WiFi</span>
+                        </label>
+                    </li>
+                    <li class="service-item">
+                        <input type="radio" name="service" id="everything" class="service-radio" value="everything">
+                        <label for="everything" class="service-label">
+                            <span class="custom-radio"></span>
+                            <span class="service-text">Everything (New build)</span>
+                        </label>
+                    </li>
+                </ul>
+                <button class="step-btn" id="step1-next">
+                    <span class="corner-border">
+                        <span class="primary-btn-inner">
+                            <span class="normal-state">Next</span>
+                            <span class="hover-state">Next</span>
+                        </span>
+                    </span>
+                </button>
+                <!-- <a class="primary-btn" id="step1-next">
+                    <span class="corner-border">
+                        <span class="primary-btn-inner">
+                            <span class="normal-state">Learn more about PoE</span>
+                            <span class="hover-state">Learn more about PoE</span>
+                        </span>
+                    </span>
+                </a> -->
+            </div>
+        </div>
+
+        <!-- Step 2: House or Apartment -->
+        <div class="step step-2">
+            <div class="left-section">
+                <div class="house-container">
+                    <img class="house-image" id="img-house" src="images/connect7.png" alt="House">
+                    <img class="house-image" id="img-apartment" src="images/connect8.png" alt="Apartment" style="display: none;">
+                </div>
+            </div>
+
+            <div class="right-section">
+                <h2 class="heading">Is it for a house or apartment?</h2>
+                <ul class="services-list">
+                    <li class="service-item">
+                        <input type="radio" name="property-type" id="house" class="service-radio" value="house" checked>
+                        <label for="house" class="service-label selected">
+                            <span class="custom-radio"></span>
+                            <span class="service-text">House</span>
+                        </label>
+                    </li>
+                    <li class="service-item">
+                        <input type="radio" name="property-type" id="apartment" class="service-radio" value="apartment">
+                        <label for="apartment" class="service-label">
+                            <span class="custom-radio"></span>
+                            <span class="service-text">Apartment</span>
+                        </label>
+                    </li>
+                </ul>
+                <div class="button-group">
+                    <button class="step-btn" id="step2-prev">
+                        <span class="corner-border">
+                            <span class="primary-btn-inner">
+                                <span class="normal-state">Previous</span>
+                                <span class="hover-state">Previous</span>
+                            </span>
+                        </span>
+                    </button>
+                    <button class="step-btn" id="step2-next">
+                        <span class="corner-border">
+                            <span class="primary-btn-inner">
+                                <span class="normal-state">Next</span>
+                                <span class="hover-state">Next</span>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3: New Build or Already Built -->
+        <div class="step step-3">
+            <div class="left-section">
+                <div class="house-container">
+                    <img class="house-image" id="img-new-build" src="images/connect9.png" alt="New Build">
+                    <img class="house-image" id="img-already-built" src="images/connect10.png" alt="Already Built" style="display: none;">
+                </div>
+            </div>
+
+            <div class="right-section">
+                <h2 class="heading">Is it for a new build (before drywall) or it's already built</h2>
+                <ul class="services-list">
+                    <li class="service-item">
+                        <input type="radio" name="build-type" id="new-build" class="service-radio" value="new-build" checked>
+                        <label for="new-build" class="service-label selected">
+                            <span class="custom-radio"></span>
+                            <span class="service-text">New Build</span>
+                        </label>
+                    </li>
+                    <li class="service-item">
+                        <input type="radio" name="build-type" id="already-built" class="service-radio" value="already-built">
+                        <label for="already-built" class="service-label">
+                            <span class="custom-radio"></span>
+                            <span class="service-text">Already Built</span>
+                        </label>
+                    </li>
+                </ul>
+                <div class="button-group">
+                    <button class="step-btn" id="step3-prev">
+                        <span class="corner-border">
+                            <span class="primary-btn-inner">
+                                <span class="normal-state">Previous</span>
+                                <span class="hover-state">Previous</span>
+                            </span>
+                        </span>
+                    </button>
+                    <button class="step-btn" id="step3-next">
+                        <span class="corner-border">
+                            <span class="primary-btn-inner">
+                                <span class="normal-state">Next</span>
+                                <span class="hover-state">Next</span>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-container">
+            <button class="popup-close" id="popup-close" aria-label="Close popup">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="popup-content">
+                <div class="popup-image-container">
+                    <img src="images/connect1.png" alt="Success" class="popup-image">
+                </div>
+                <h2 class="popup-title">Thank You!</h2>
+                <p class="popup-message">Your information has been submitted successfully.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- scripts -->
+    <script>
+        // Get all radio buttons and labels
+        const radioButtons = document.querySelectorAll('.service-radio');
+        const labels = document.querySelectorAll('.service-label');
+        const images = {
+            'camera-systems': document.getElementById('img-camera-systems'),
+            'automation': document.getElementById('img-automation'),
+            'sound-systems': document.getElementById('img-sound-systems'),
+            'lighting': document.getElementById('img-lighting'),
+            'networking': document.getElementById('img-networking'),
+            'everything': document.getElementById('img-everything')
+        };
+
+        // Function to update all labels based on checked state
+        function updateLabels() {
+            // Remove selected class from all service-items
+            document.querySelectorAll('.service-item').forEach(item => {
+                item.classList.remove('has-selected');
+            });
+            
+            labels.forEach(label => {
+                const radioId = label.getAttribute('for');
+                const radio = document.getElementById(radioId);
+                const serviceItem = label.closest('.service-item');
+                
+                if (radio && radio.checked) {
+                    label.classList.add('selected');
+                    if (serviceItem) {
+                        serviceItem.classList.add('has-selected');
+                    }
+                } else {
+                    label.classList.remove('selected');
+                    // Reset border color for unselected items
+                    if (!label.classList.contains('selected')) {
+                        label.style.border = '2px solid #e5e7eb';
+                    }
+                }
+            });
+        }
+
+        // Function to switch images
+        function switchImage(serviceId) {
+            // Hide all images
+            Object.values(images).forEach(img => {
+                if (img) img.style.display = 'none';
+            });
+            
+            // Show selected image
+            if (images[serviceId]) {
+                images[serviceId].style.display = 'block';
+            }
+        }
+
+        // Add event listeners to radio buttons - this ensures only one is selected
+        radioButtons.forEach(radio => {
+            radio.addEventListener('change', function() {
+                // Update all labels to reflect current selection (only one will be checked)
+                updateLabels();
+                
+                // Switch image
+                if (this.checked) {
+                    switchImage(this.value);
+                }
+            });
+            
+            // Also listen to click to ensure immediate update
+            radio.addEventListener('click', function() {
+                // Small delay to let browser handle the native radio behavior
+                setTimeout(() => {
+                    updateLabels();
+                    if (this.checked) {
+                        switchImage(this.value);
+                    }
+                }, 0);
+            });
+        });
+
+        // Add hover effect to labels
+        labels.forEach(label => {
+            label.addEventListener('mouseenter', function() {
+                if (!this.classList.contains('selected')) {
+                    this.style.border = '2px solid #8b5cf6';
+                }
+            });
+            
+            label.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('selected')) {
+                    this.style.border = '2px solid #e5e7eb';
+                }
+            });
+        });
+
+        // Initialize with first option selected
+        updateLabels();
+        switchImage('camera-systems');
+
+        // Step navigation functionality
+        const step1 = document.querySelector('.step-1');
+        const step2 = document.querySelector('.step-2');
+        const step3 = document.querySelector('.step-3');
+        const step1NextBtn = document.getElementById('step1-next');
+        const step2NextBtn = document.getElementById('step2-next');
+        const step2PrevBtn = document.getElementById('step2-prev');
+        const step3NextBtn = document.getElementById('step3-next');
+        const step3PrevBtn = document.getElementById('step3-prev');
+
+        // Function to show a specific step
+        function showStep(stepNumber) {
+            // Hide all steps
+            document.querySelectorAll('.step').forEach(step => {
+                step.classList.remove('active');
+            });
+            
+            // Show the requested step
+            const stepToShow = document.querySelector(`.step-${stepNumber}`);
+            if (stepToShow) {
+                stepToShow.classList.add('active');
+            }
+
+            // Restore images based on selected options when switching steps
+            if (stepNumber === 1) {
+                // Restore step 1 image based on selected service
+                const selectedService = document.querySelector('input[name="service"]:checked');
+                if (selectedService) {
+                    switchImage(selectedService.value);
+                }
+            } else if (stepNumber === 2) {
+                // Restore step 2 image based on selected property type
+                const selectedPropertyType = document.querySelector('input[name="property-type"]:checked');
+                if (selectedPropertyType) {
+                    switchStep2Image(selectedPropertyType.value);
+                }
+            } else if (stepNumber === 3) {
+                // Restore step 3 image based on selected build type
+                const selectedBuildType = document.querySelector('input[name="build-type"]:checked');
+                if (selectedBuildType) {
+                    switchStep3Image(selectedBuildType.value);
+                }
+            }
+        }
+
+        // Step 1 Next button click handler
+        if (step1NextBtn) {
+            step1NextBtn.addEventListener('click', function() {
+                showStep(2);
+            });
+        }
+
+        // Step 2 Previous button click handler
+        if (step2PrevBtn) {
+            step2PrevBtn.addEventListener('click', function() {
+                showStep(1);
+            });
+        }
+
+        // Step 2 Next button click handler
+        if (step2NextBtn) {
+            step2NextBtn.addEventListener('click', function() {
+                showStep(3);
+            });
+        }
+
+        // Step 3 Previous button click handler
+        if (step3PrevBtn) {
+            step3PrevBtn.addEventListener('click', function() {
+                showStep(2);
+            });
+        }
+
+        // Popup functionality
+        const popupOverlay = document.getElementById('popup-overlay');
+        const popupClose = document.getElementById('popup-close');
+
+        // Function to open popup
+        function openPopup() {
+            if (popupOverlay) {
+                popupOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        }
+
+        // Function to close popup
+        function closePopup() {
+            if (popupOverlay) {
+                popupOverlay.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        }
+
+        // Step 3 Next button click handler - opens popup
+        if (step3NextBtn) {
+            step3NextBtn.addEventListener('click', function() {
+                openPopup();
+            });
+        }
+
+        // Close popup when close button is clicked
+        if (popupClose) {
+            popupClose.addEventListener('click', function() {
+                closePopup();
+            });
+        }
+
+        // Close popup when clicking outside the popup container
+        if (popupOverlay) {
+            popupOverlay.addEventListener('click', function(e) {
+                if (e.target === popupOverlay) {
+                    closePopup();
+                }
+            });
+        }
+
+        // Close popup on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && popupOverlay && popupOverlay.classList.contains('active')) {
+                closePopup();
+            }
+        });
+
+        // Handle step 2 radio buttons (house/apartment)
+        const step2Radios = document.querySelectorAll('input[name="property-type"]');
+        const step2Labels = document.querySelectorAll('.step-2 .service-label');
+        const step2Items = document.querySelectorAll('.step-2 .service-item');
+
+        function updateStep2Labels() {
+            // Remove has-selected from all step 2 items
+            step2Items.forEach(item => {
+                item.classList.remove('has-selected');
+            });
+            
+            // Update all step 2 labels
+            step2Labels.forEach(label => {
+                const radioId = label.getAttribute('for');
+                const radioBtn = document.getElementById(radioId);
+                const serviceItem = label.closest('.service-item');
+                
+                if (radioBtn && radioBtn.checked) {
+                    label.classList.add('selected');
+                    if (serviceItem) {
+                        serviceItem.classList.add('has-selected');
+                    }
+                } else {
+                    label.classList.remove('selected');
+                    label.style.border = '2px solid #e5e7eb';
+                }
+            });
+        }
+
+        // Step 2 images
+        const imgHouse = document.getElementById('img-house');
+        const imgApartment = document.getElementById('img-apartment');
+
+        // Function to switch step 2 images
+        function switchStep2Image(propertyType) {
+            if (propertyType === 'house') {
+                if (imgHouse) imgHouse.style.display = 'block';
+                if (imgApartment) imgApartment.style.display = 'none';
+            } else if (propertyType === 'apartment') {
+                if (imgHouse) imgHouse.style.display = 'none';
+                if (imgApartment) imgApartment.style.display = 'block';
+            }
+        }
+
+        step2Radios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                updateStep2Labels();
+                // Switch image based on selection
+                switchStep2Image(this.value);
+            });
+        });
+
+        // Add hover effect to step 2 labels
+        step2Labels.forEach(label => {
+            label.addEventListener('mouseenter', function() {
+                if (!this.classList.contains('selected')) {
+                    this.style.border = '2px solid rgba(68, 93, 244, 1)';
+                }
+            });
+            
+            label.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('selected')) {
+                    this.style.border = '2px solid #e5e7eb';
+                }
+            });
+        });
+
+        // Initialize step 2 labels and image
+        updateStep2Labels();
+        // Initialize step 2 image (house is selected by default)
+        const defaultPropertyType = document.querySelector('input[name="property-type"]:checked');
+        if (defaultPropertyType) {
+            switchStep2Image(defaultPropertyType.value);
+        }
+
+        // Handle step 3 radio buttons (new-build/already-built)
+        const step3Radios = document.querySelectorAll('input[name="build-type"]');
+        const step3Labels = document.querySelectorAll('.step-3 .service-label');
+        const step3Items = document.querySelectorAll('.step-3 .service-item');
+
+        function updateStep3Labels() {
+            // Remove has-selected from all step 3 items
+            step3Items.forEach(item => {
+                item.classList.remove('has-selected');
+            });
+            
+            // Update all step 3 labels
+            step3Labels.forEach(label => {
+                const radioId = label.getAttribute('for');
+                const radioBtn = document.getElementById(radioId);
+                const serviceItem = label.closest('.service-item');
+                
+                if (radioBtn && radioBtn.checked) {
+                    label.classList.add('selected');
+                    if (serviceItem) {
+                        serviceItem.classList.add('has-selected');
+                    }
+                } else {
+                    label.classList.remove('selected');
+                    label.style.border = '2px solid #e5e7eb';
+                }
+            });
+        }
+
+        // Step 3 images
+        const imgNewBuild = document.getElementById('img-new-build');
+        const imgAlreadyBuilt = document.getElementById('img-already-built');
+
+        // Function to switch step 3 images
+        function switchStep3Image(buildType) {
+            if (buildType === 'new-build') {
+                if (imgNewBuild) imgNewBuild.style.display = 'block';
+                if (imgAlreadyBuilt) imgAlreadyBuilt.style.display = 'none';
+            } else if (buildType === 'already-built') {
+                if (imgNewBuild) imgNewBuild.style.display = 'none';
+                if (imgAlreadyBuilt) imgAlreadyBuilt.style.display = 'block';
+            }
+        }
+
+        step3Radios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                updateStep3Labels();
+                // Switch image based on selection
+                switchStep3Image(this.value);
+            });
+        });
+
+        // Add hover effect to step 3 labels
+        step3Labels.forEach(label => {
+            label.addEventListener('mouseenter', function() {
+                if (!this.classList.contains('selected')) {
+                    this.style.border = '2px solid rgba(68, 93, 244, 1)';
+                }
+            });
+            
+            label.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('selected')) {
+                    this.style.border = '2px solid #e5e7eb';
+                }
+            });
+        });
+
+        // Initialize step 3 labels and image
+        updateStep3Labels();
+        // Initialize step 3 image (new-build is selected by default)
+        const defaultBuildType = document.querySelector('input[name="build-type"]:checked');
+        if (defaultBuildType) {
+            switchStep3Image(defaultBuildType.value);
+        }
+    </script>
+      <!-- end of scripts -->
+</body>
+</html>
