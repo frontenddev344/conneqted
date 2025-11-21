@@ -10,132 +10,78 @@
 <body>
     <section class="quiz-sec">
         <div class="container">
-            <!-- Step 1: Service Selection -->
-            <div class="step step-1 active">
-                <div class="left-section">
-                    <div class="house-container">
-                        <!-- Camera Systems - Image 1 -->
-                        <img class="house-image" id="img-camera-systems" src="images/connect1.png" alt="Camera systems and access control">
-    
-                        <!-- Automation/Smart Home - Image 2 -->
-                        <img class="house-image" id="img-automation" src="images/connect2.png" alt="Automation/Smart Home" style="display: none;">
-    
-                        <!-- Sound Systems - Image 3 -->
-                        <img class="house-image" id="img-sound-systems" src="images/connect3.png" alt="Sound systems" style="display: none;">
-    
-                        <!-- Lighting & Decor - Image 4 -->
-                        <img class="house-image" id="img-lighting" src="images/connect4.png" alt="Lighting & Decor" style="display: none;">
-    
-                        <!-- Networking - Image 5 -->
-                        <img class="house-image" id="img-networking" src="images/connect5.png" alt="Local Networking and WiFi" style="display: none;">
-    
-                        <!-- Everything - Image 6 -->
-                        <img class="house-image" id="img-everything" src="images/connect6.png" alt="Everything (New build)" style="display: none;">
+            <div class="quiz-container">
+                <!-- Step 1: Service Selection -->
+                <div class="step step-1 active">
+                    <div class="left-section">
+                        <div class="house-container">
+                            <!-- Camera Systems - Image 1 -->
+                            <img class="house-image" id="img-camera-systems" src="images/connect1.png" alt="Camera systems and access control">
+        
+                            <!-- Automation/Smart Home - Image 2 -->
+                            <img class="house-image" id="img-automation" src="images/connect2.png" alt="Automation/Smart Home" style="display: none;">
+        
+                            <!-- Sound Systems - Image 3 -->
+                            <img class="house-image" id="img-sound-systems" src="images/connect3.png" alt="Sound systems" style="display: none;">
+        
+                            <!-- Lighting & Decor - Image 4 -->
+                            <img class="house-image" id="img-lighting" src="images/connect4.png" alt="Lighting & Decor" style="display: none;">
+        
+                            <!-- Networking - Image 5 -->
+                            <img class="house-image" id="img-networking" src="images/connect5.png" alt="Local Networking and WiFi" style="display: none;">
+        
+                            <!-- Everything - Image 6 -->
+                            <img class="house-image" id="img-everything" src="images/connect6.png" alt="Everything (New build)" style="display: none;">
+                        </div>
                     </div>
-                </div>
-    
-                <div class="right-section">
-                    <h2 class="heading">How we can help?</h2>
-                    <ul class="services-list">
-                        <li class="service-item">
-                            <input type="radio" name="service" id="camera-systems" class="service-radio" value="camera-systems" checked>
-                            <label for="camera-systems" class="service-label selected">
-                                <span class="custom-radio"></span>
-                                <span class="service-text">Camera systems and access control</span>
-                            </label>
-                        </li>
-                        <li class="service-item">
-                            <input type="radio" name="service" id="automation" class="service-radio" value="automation">
-                            <label for="automation" class="service-label">
-                                <span class="custom-radio"></span>
-                                <span class="service-text">Automation/Smart Home</span>
-                            </label>
-                        </li>
-                        <li class="service-item">
-                            <input type="radio" name="service" id="sound-systems" class="service-radio" value="sound-systems">
-                            <label for="sound-systems" class="service-label">
-                                <span class="custom-radio"></span>
-                                <span class="service-text">Sound systems</span>
-                            </label>
-                        </li>
-                        <li class="service-item">
-                            <input type="radio" name="service" id="lighting" class="service-radio" value="lighting">
-                            <label for="lighting" class="service-label">
-                                <span class="custom-radio"></span>
-                                <span class="service-text">Lighting & Decor</span>
-                            </label>
-                        </li>
-                        <li class="service-item">
-                            <input type="radio" name="service" id="networking" class="service-radio" value="networking">
-                            <label for="networking" class="service-label">
-                                <span class="custom-radio"></span>
-                                <span class="service-text">Local Networking and WiFi</span>
-                            </label>
-                        </li>
-                        <li class="service-item">
-                            <input type="radio" name="service" id="everything" class="service-radio" value="everything">
-                            <label for="everything" class="service-label">
-                                <span class="custom-radio"></span>
-                                <span class="service-text">Everything (New build)</span>
-                            </label>
-                        </li>
-                    </ul>
-                    <button class="step-btn" id="step1-next">
-                        <span class="corner-border">
-                            <span class="primary-btn-inner">
-                                <span class="normal-state">Next</span>
-                                <span class="hover-state">Next</span>
-                            </span>
-                        </span>
-                    </button>
-                    <!-- <a class="primary-btn" id="step1-next">
-                        <span class="corner-border">
-                            <span class="primary-btn-inner">
-                                <span class="normal-state">Learn more about PoE</span>
-                                <span class="hover-state">Learn more about PoE</span>
-                            </span>
-                        </span>
-                    </a> -->
-                </div>
-            </div>
-    
-            <!-- Step 2: House or Apartment -->
-            <div class="step step-2">
-                <div class="left-section">
-                    <div class="house-container">
-                        <img class="house-image" id="img-house" src="images/connect7.png" alt="House">
-                        <img class="house-image" id="img-apartment" src="images/connect8.png" alt="Apartment" style="display: none;">
-                    </div>
-                </div>
-    
-                <div class="right-section">
-                    <h2 class="heading">Is it for a house or apartment?</h2>
-                    <ul class="services-list">
-                        <li class="service-item">
-                            <input type="radio" name="property-type" id="house" class="service-radio" value="house" checked>
-                            <label for="house" class="service-label selected">
-                                <span class="custom-radio"></span>
-                                <span class="service-text">House</span>
-                            </label>
-                        </li>
-                        <li class="service-item">
-                            <input type="radio" name="property-type" id="apartment" class="service-radio" value="apartment">
-                            <label for="apartment" class="service-label">
-                                <span class="custom-radio"></span>
-                                <span class="service-text">Apartment</span>
-                            </label>
-                        </li>
-                    </ul>
-                    <div class="button-group">
-                        <button class="step-btn" id="step2-prev">
-                            <span class="corner-border">
-                                <span class="primary-btn-inner">
-                                    <span class="normal-state">Previous</span>
-                                    <span class="hover-state">Previous</span>
-                                </span>
-                            </span>
-                        </button>
-                        <button class="step-btn" id="step2-next">
+        
+                    <div class="right-section">
+                        <h2 class="heading">How we can help?</h2>
+                        <ul class="services-list">
+                            <li class="service-item">
+                                <input type="radio" name="service" id="camera-systems" class="service-radio" value="camera-systems" checked>
+                                <label for="camera-systems" class="service-label selected">
+                                    <span class="custom-radio"></span>
+                                    <span class="service-text">Camera systems and access control</span>
+                                </label>
+                            </li>
+                            <li class="service-item">
+                                <input type="radio" name="service" id="automation" class="service-radio" value="automation">
+                                <label for="automation" class="service-label">
+                                    <span class="custom-radio"></span>
+                                    <span class="service-text">Automation/Smart Home</span>
+                                </label>
+                            </li>
+                            <li class="service-item">
+                                <input type="radio" name="service" id="sound-systems" class="service-radio" value="sound-systems">
+                                <label for="sound-systems" class="service-label">
+                                    <span class="custom-radio"></span>
+                                    <span class="service-text">Sound systems</span>
+                                </label>
+                            </li>
+                            <li class="service-item">
+                                <input type="radio" name="service" id="lighting" class="service-radio" value="lighting">
+                                <label for="lighting" class="service-label">
+                                    <span class="custom-radio"></span>
+                                    <span class="service-text">Lighting & Decor</span>
+                                </label>
+                            </li>
+                            <li class="service-item">
+                                <input type="radio" name="service" id="networking" class="service-radio" value="networking">
+                                <label for="networking" class="service-label">
+                                    <span class="custom-radio"></span>
+                                    <span class="service-text">Local Networking and WiFi</span>
+                                </label>
+                            </li>
+                            <li class="service-item">
+                                <input type="radio" name="service" id="everything" class="service-radio" value="everything">
+                                <label for="everything" class="service-label">
+                                    <span class="custom-radio"></span>
+                                    <span class="service-text">Everything (New build)</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <button class="step-btn" id="step1-next">
                             <span class="corner-border">
                                 <span class="primary-btn-inner">
                                     <span class="normal-state">Next</span>
@@ -143,57 +89,114 @@
                                 </span>
                             </span>
                         </button>
+                        <!-- <a class="primary-btn" id="step1-next">
+                            <span class="corner-border">
+                                <span class="primary-btn-inner">
+                                    <span class="normal-state">Learn more about PoE</span>
+                                    <span class="hover-state">Learn more about PoE</span>
+                                </span>
+                            </span>
+                        </a> -->
+                    </div>
+                </div>
+        
+                <!-- Step 2: House or Apartment -->
+                <div class="step step-2">
+                    <div class="left-section">
+                        <div class="house-container">
+                            <img class="house-image" id="img-house" src="images/connect7.png" alt="House">
+                            <img class="house-image" id="img-apartment" src="images/connect8.png" alt="Apartment" style="display: none;">
+                        </div>
+                    </div>
+        
+                    <div class="right-section">
+                        <h2 class="heading">Is it for a house or apartment?</h2>
+                        <ul class="services-list">
+                            <li class="service-item">
+                                <input type="radio" name="property-type" id="house" class="service-radio" value="house" checked>
+                                <label for="house" class="service-label selected">
+                                    <span class="custom-radio"></span>
+                                    <span class="service-text">House</span>
+                                </label>
+                            </li>
+                            <li class="service-item">
+                                <input type="radio" name="property-type" id="apartment" class="service-radio" value="apartment">
+                                <label for="apartment" class="service-label">
+                                    <span class="custom-radio"></span>
+                                    <span class="service-text">Apartment</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="button-group">
+                            <button class="step-btn" id="step2-prev">
+                                <span class="corner-border">
+                                    <span class="primary-btn-inner">
+                                        <span class="normal-state">Previous</span>
+                                        <span class="hover-state">Previous</span>
+                                    </span>
+                                </span>
+                            </button>
+                            <button class="step-btn" id="step2-next">
+                                <span class="corner-border">
+                                    <span class="primary-btn-inner">
+                                        <span class="normal-state">Next</span>
+                                        <span class="hover-state">Next</span>
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Step 3: New Build or Already Built -->
+                <div class="step step-3">
+                    <div class="left-section">
+                        <div class="house-container">
+                            <img class="house-image" id="img-new-build" src="images/connect9.png" alt="New Build">
+                            <img class="house-image" id="img-already-built" src="images/connect10.png" alt="Already Built" style="display: none;">
+                        </div>
+                    </div>
+        
+                    <div class="right-section">
+                        <h2 class="heading">Is it for a new build (before drywall) or it's already built</h2>
+                        <ul class="services-list">
+                            <li class="service-item">
+                                <input type="radio" name="build-type" id="new-build" class="service-radio" value="new-build" checked>
+                                <label for="new-build" class="service-label selected">
+                                    <span class="custom-radio"></span>
+                                    <span class="service-text">New Build</span>
+                                </label>
+                            </li>
+                            <li class="service-item">
+                                <input type="radio" name="build-type" id="already-built" class="service-radio" value="already-built">
+                                <label for="already-built" class="service-label">
+                                    <span class="custom-radio"></span>
+                                    <span class="service-text">Already Built</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="button-group">
+                            <button class="step-btn" id="step3-prev">
+                                <span class="corner-border">
+                                    <span class="primary-btn-inner">
+                                        <span class="normal-state">Previous</span>
+                                        <span class="hover-state">Previous</span>
+                                    </span>
+                                </span>
+                            </button>
+                            <button class="step-btn" id="step3-next">
+                                <span class="corner-border">
+                                    <span class="primary-btn-inner">
+                                        <span class="normal-state">Next</span>
+                                        <span class="hover-state">Next</span>
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-    
-            <!-- Step 3: New Build or Already Built -->
-            <div class="step step-3">
-                <div class="left-section">
-                    <div class="house-container">
-                        <img class="house-image" id="img-new-build" src="images/connect9.png" alt="New Build">
-                        <img class="house-image" id="img-already-built" src="images/connect10.png" alt="Already Built" style="display: none;">
-                    </div>
-                </div>
-    
-                <div class="right-section">
-                    <h2 class="heading">Is it for a new build (before drywall) or it's already built</h2>
-                    <ul class="services-list">
-                        <li class="service-item">
-                            <input type="radio" name="build-type" id="new-build" class="service-radio" value="new-build" checked>
-                            <label for="new-build" class="service-label selected">
-                                <span class="custom-radio"></span>
-                                <span class="service-text">New Build</span>
-                            </label>
-                        </li>
-                        <li class="service-item">
-                            <input type="radio" name="build-type" id="already-built" class="service-radio" value="already-built">
-                            <label for="already-built" class="service-label">
-                                <span class="custom-radio"></span>
-                                <span class="service-text">Already Built</span>
-                            </label>
-                        </li>
-                    </ul>
-                    <div class="button-group">
-                        <button class="step-btn" id="step3-prev">
-                            <span class="corner-border">
-                                <span class="primary-btn-inner">
-                                    <span class="normal-state">Previous</span>
-                                    <span class="hover-state">Previous</span>
-                                </span>
-                            </span>
-                        </button>
-                        <button class="step-btn" id="step3-next">
-                            <span class="corner-border">
-                                <span class="primary-btn-inner">
-                                    <span class="normal-state">Next</span>
-                                    <span class="hover-state">Next</span>
-                                </span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section>
 

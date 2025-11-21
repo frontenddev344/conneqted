@@ -13,21 +13,17 @@ body {
 .quiz-sec {
     padding: 80px 0;
 }
-.container {
-    max-width:calc(100% - 248px);
-    width: 100%;
+.quiz-container {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
-    min-height: 600px;
     position: relative;
     margin: 0 auto;
 }
 
 /* Step container styles */
-.step {
+.quiz-sec .step {
     display: flex;
     width: 100%;
     opacity: 0;
@@ -40,13 +36,13 @@ body {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.step.active {
+.quiz-sec .step.active {
     opacity: 1;
     visibility: visible;
     position: relative;
 }
 
-.left-section {
+.quiz-sec .left-section {
     width: 60%;
     background: #f8f9fa;
     display: flex;
@@ -55,7 +51,7 @@ body {
     position: relative;
 }
 
-.house-container {
+.quiz-sec .house-container {
     width: 100%;
     height: 100%;
     position: relative;
@@ -64,7 +60,7 @@ body {
     justify-content: center;
 }
 
-.house-image {
+.quiz-sec .house-image {
     width: 100%;
     max-width: 100%;
     height: 100%;
@@ -72,13 +68,13 @@ body {
     object-fit: cover;
 }
 
-.house-svg {
+.quiz-sec .house-svg {
     width: 100%;
     max-width: 500px;
     height: auto;
 }
 
-.right-section {
+.quiz-sec .right-section {
     width: 40%;
     padding: 30px 40px;
     display: flex;
@@ -86,7 +82,7 @@ body {
     justify-content: space-between;
 }
 
-.heading {
+.quiz-sec .heading {
     margin-bottom: 40px;
     font-family: var(--helvetica);
     font-weight: 300;
@@ -95,18 +91,18 @@ body {
 }
 
 
-.services-list {
+.quiz-sec .services-list {
     list-style: none;
     margin-bottom: 40px;
 }
 
-.service-item {
+.quiz-sec .service-item {
     margin-bottom: 20px;
     position: relative;
 }
 
 /* Bottom corner decorations for hover state */
-.service-item:hover:not(.has-selected)::before {
+.quiz-sec .service-item:hover:not(.has-selected)::before {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -120,7 +116,7 @@ body {
     pointer-events: none;
 }
 
-.service-item:hover:not(.has-selected)::after {
+.quiz-sec .service-item:hover:not(.has-selected)::after {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -135,7 +131,7 @@ body {
 }
 
 /* Bottom corner decorations for selected item */
-.service-item.has-selected::before {
+.quiz-sec .service-item.has-selected::before {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -149,7 +145,7 @@ body {
     pointer-events: none;
 }
 
-.service-item.has-selected::after {
+.quiz-sec .service-item.has-selected::after {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -163,11 +159,11 @@ body {
     pointer-events: none;
 }
 
-.service-radio {
+.quiz-sec .service-radio {
     display: none;
 }
 
-.service-label {
+.quiz-sec .service-label {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -179,13 +175,13 @@ body {
     background: white;
 }
 
-.service-label:hover {
+.quiz-sec .service-label:hover {
     border-color: rgba(68, 93, 244, 1);
     position: relative;
 }
 
 /* Gradient border effect on hover */
-.service-label:hover:not(.selected)::before {
+.quiz-sec .service-label:hover:not(.selected)::before {
     content: '';
     position: absolute;
     top: -1px;
@@ -199,7 +195,7 @@ body {
     pointer-events: none;
 }
 
-.service-label:hover:not(.selected)::after {
+.quiz-sec .service-label:hover:not(.selected)::after {
     content: '';
     position: absolute;
     top: -1px;
@@ -213,14 +209,14 @@ body {
     pointer-events: none;
 }
 
-.service-label.selected {
+.quiz-sec .service-label.selected {
     border: 2px solid #e5e7eb;
     background: white;
     position: relative;
 }
 
 /* Corner accent decorations - Top Left (Blue) */
-.service-label.selected::before {
+.quiz-sec .service-label.selected::before {
     content: '';
     position: absolute;
     top: -1px;
@@ -235,7 +231,7 @@ body {
 }
 
 /* Corner accent decorations - Top Right (Pink) */
-.service-label.selected::after {
+.quiz-sec .service-label.selected::after {
     content: '';
     position: absolute;
     top: -1px;
@@ -249,7 +245,7 @@ body {
     pointer-events: none;
 }
 
-.custom-radio {
+.quiz-sec .custom-radio {
     width: 20px;
     height: 20px;
     border: 1px solid #d1d5db;
@@ -261,15 +257,15 @@ body {
     background: transparent;
 }
 
-.service-label:hover .custom-radio {
+.quiz-sec .service-label:hover .custom-radio {
     border-color: rgba(68, 93, 244, 1);
 }
 
-.service-label.selected .custom-radio {
+.quiz-sec .service-label.selected .custom-radio {
     background: linear-gradient(90deg, rgba(68, 93, 244, 1) 0%, rgba(218, 88, 112, 1) 100%);
 }
 
-.service-label.selected .custom-radio::after {
+.quiz-sec .service-label.selected .custom-radio::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -281,7 +277,7 @@ body {
     border-radius: 50%;
 }
 
-.service-text {
+.quiz-sec .service-text {
     font-family: var(--helvetica);
     font-weight: 300;
     font-size: 24px;
@@ -290,7 +286,7 @@ body {
 }
 
 /* Only selected tab text has gradient */
-.service-label.selected .service-text {
+.quiz-sec .service-label.selected .service-text {
     background: linear-gradient(90deg, rgba(68, 93, 244, 1) 0%, rgba(218, 88, 112, 1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -298,14 +294,14 @@ body {
 }
 
 /* Hover state text also has gradient */
-.service-label:hover:not(.selected) .service-text {
+.quiz-sec .service-label:hover:not(.selected) .service-text {
     background: linear-gradient(90deg, rgba(68, 93, 244, 1) 0%, rgba(218, 88, 112, 1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
-.next-button {
+.quiz-sec .next-button {
     background: linear-gradient(90deg, rgba(68, 93, 244, 1) 0%, rgba(218, 88, 112, 1) 100%);
     color: white;
     border: none;
@@ -322,7 +318,7 @@ body {
 }
 
 /* Corner brackets on hover - Top Left */
-.next-button:hover::before {
+.quiz-sec .next-button:hover::before {
     content: '';
     position: absolute;
     top: -1px;
@@ -337,7 +333,7 @@ body {
 }
 
 /* Corner brackets on hover - Top Right */
-.next-button:hover::after {
+.quiz-sec .next-button:hover::after {
     content: '';
     position: absolute;
     top: -1px;
@@ -351,16 +347,16 @@ body {
     pointer-events: none;
 }
 
-.next-button:hover {
+.quiz-sec .next-button:hover {
     box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
 }
 
-.next-button:active {
+.quiz-sec .next-button:active {
     transform: translateY(0);
 }
 
 /* Button Group */
-.button-group {
+.quiz-sec .button-group {
     display: flex;
     gap: 16px;
     align-items: center;
@@ -368,24 +364,24 @@ body {
     position: relative;
 }
 
-.next-button:hover {
+.quiz-sec .next-button:hover {
     box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
 }
 
-.prev-button:hover {
+.quiz-sec .prev-button:hover {
     box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
 }
 
 /* Bottom corner brackets on hover using span */
-.next-button span,
-.prev-button span {
+.quiz-sec .next-button span,
+.quiz-sec .prev-button span {
     position: relative;
     display: inline-block;
 }
 
 /* Bottom left corner bracket - positioned at button's bottom-left edge */
-.next-button:hover span::before,
-.prev-button:hover span::before {
+.quiz-sec .next-button:hover span::before,
+.quiz-sec .prev-button:hover span::before {
     content: '';
     position: absolute;
     bottom: -22px;
@@ -400,8 +396,8 @@ body {
 }
 
 /* Bottom right corner bracket - positioned at button's bottom-right edge */
-.next-button:hover span::after,
-.prev-button:hover span::after {
+.quiz-sec .next-button:hover span::after,
+.quiz-sec .prev-button:hover span::after {
     content: '';
     position: absolute;
     bottom: -22px;
@@ -416,7 +412,7 @@ body {
 }
 
 /* Previous Button - Same design as Next button */
-.step-btn {
+.quiz-sec .step-btn {
     background: linear-gradient(90deg, rgba(68, 93, 244, 1) 0%, rgba(218, 88, 112, 1) 100%);
     color: white;
     border: none;
@@ -432,8 +428,8 @@ body {
     position: relative;
 }
 
-.step-btn::before, .corner-border::before,
-.step-btn::after, .corner-border::after {
+.quiz-sec .step-btn::before, .quiz-sec .corner-border::before,
+.quiz-sec .step-btn::after, .quiz-sec  .corner-border::after {
   content: '';
   position: absolute;
   width: 15.5px;
@@ -442,7 +438,7 @@ body {
   transition: 0.3s;
 }
 
-.step-btn::before {
+.quiz-sec .step-btn::before {
   top: -1px;
   left: -1px;
   border-right: none;
@@ -450,7 +446,7 @@ body {
   border-top-left-radius: 4px;
 }
 
-.step-btn::after {
+.quiz-sec .step-btn::after {
   bottom: -1px;
   right: -1px;
   border-left: none;
@@ -459,7 +455,7 @@ body {
 }
 
 
-.corner-border::before {
+.quiz-sec .corner-border::before {
     bottom: -1px;
     left: -1px;
     border-right: none;
@@ -467,7 +463,7 @@ body {
     border-bottom-left-radius: 4px;
 }
   
-.corner-border::after {
+.quiz-sec .corner-border::after {
     top: -1px;
     right: -1px;
     border-left: none;
@@ -475,11 +471,11 @@ body {
     border-top-right-radius: 4px;
 }
 
-.step-btn-inner {
+.quiz-sec .step-btn-inner {
     overflow: hidden;
     position: relative;
 }
-.step-btn-inner::before {
+.quiz-sec .step-btn-inner::before {
     content: "";
     background: #171325;
     width: 31px;
@@ -502,7 +498,7 @@ body {
   }
   
   
-.step-btn .normal-state {
+.quiz-sec .step-btn .normal-state {
     background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0.2) 0%,
@@ -519,7 +515,7 @@ body {
 
 
 
-.step-btn .hover-state {
+.quiz-sec .step-btn .hover-state {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -529,47 +525,47 @@ body {
     transform: translateY(100%);
 }
 
-.step-btn span {
+.quiz-sec .step-btn span {
     display: block;
     transition: all 0.2s linear;
     color: #fff;
 }
 
-.step-btn:hover .normal-state {
+.quiz-sec .step-btn:hover .normal-state {
     transform: translateY(-100%);
 }
 
-.step-btn:hover .hover-state {
+.quiz-sec .step-btn:hover .hover-state {
     transform: translateY(0);
 }
 
-.step-btn:hover::before {
+.quiz-sec .step-btn:hover::before {
     left: 8px;
     top: 8px;
 }
-.step-btn:hover::after {
+.quiz-sec .step-btn:hover::after {
     right: 8px;
     bottom: 8px;
 }
-.step-btn:hover .corner-border::before {
+.quiz-sec .step-btn:hover .corner-border::before {
     bottom: 8px;
     left: 8px;
 }
-.step-btn:hover .corner-border::after {
+.quiz-sec .step-btn:hover .corner-border::after {
     top: 8px;
     right: 8px;
 }
 
-.step-btn:hover {
+.quiz-sec .step-btn:hover {
     /* border: 1px solid rgb(255 255 255 / 40%); */
     box-shadow: 0px 4px 72px 0px rgba(255, 255, 255, 0.25);
 }
 
-.primary-btn-inner {
+.quiz-sec .primary-btn-inner {
     overflow: hidden;
     position: relative;
 }
-.primary-btn-inner::before {
+.quiz-sec .primary-btn-inner::before {
     content: "";
     background: #171325;
     width: 31px;
@@ -628,35 +624,35 @@ body {
 } */
 
 /* SVG House Styles */
-.house-base {
+.quiz-sec .house-base {
     fill: #ffffff;
     stroke: #e5e7eb;
     stroke-width: 2;
 }
 
-.roof {
+.quiz-sec .roof {
     fill: #f3f4f6;
     stroke: #e5e7eb;
     stroke-width: 2;
 }
 
-.solar-panel {
+.quiz-sec .solar-panel {
     fill: #3b82f6;
 }
 
-.window {
+.quiz-sec .window {
     fill: #1f2937;
 }
 
-.garage-door {
+.quiz-sec .garage-door {
     fill: #374151;
 }
 
-.camera {
+.quiz-sec .camera {
     fill: #000000;
 }
 
-.connection-line {
+.quiz-sec .connection-line {
     stroke: #3b82f6;
     stroke-width: 2;
     fill: none;
@@ -670,14 +666,14 @@ body {
     }
 }
 
-.keypad {
+.quiz-sec .keypad {
     fill: #6b7280;
 }
 
-.smart-lock {
+.quiz-sec .smart-lock {
     fill: #8b5cf6;
 }
-.step.step-1 button#step1-next {
+.quiz-sec .step.step-1 button#step1-next {
     max-width: max-content;
     margin: 0 auto;
 }
