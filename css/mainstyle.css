@@ -114,9 +114,14 @@ body {
 .gradient-border > div {
     width: 100%;
 }
+.gradient-border .top-left {
+    display: flex;
+}
 
 .gradient-border .top-right {
     text-align: right;
+    display: flex;
+    justify-content: end;
 }
 
 .gradient-border .bottom-right {
@@ -423,6 +428,7 @@ body {
 /* Button Group */
 .quiz-sec .button-group {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     align-items: center;
     justify-content: space-between;
@@ -861,10 +867,6 @@ body {
         font-size: 18px;
     }
 
-    .quiz-sec .button-group {
-        flex-wrap: wrap;
-    }
-
     .quiz-sec .prev-button,
     .quiz-sec .next-button {
         flex: 1;
@@ -957,7 +959,6 @@ body {
     }
 
     .quiz-sec .button-group {
-        flex-direction: column;
         gap: 12px;
     }
 
@@ -968,5 +969,11 @@ body {
     .quiz-sec .step-btn {
         padding: 14px 50px;
         font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .quiz-sec .step-btn {
+        flex-grow: 1;
     }
 }
