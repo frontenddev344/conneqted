@@ -690,11 +690,6 @@
                      </svg>
                  </button>
                  <div class="popup-content">
-                     <!-- <div class="popup-image-container">
-                         <img src="images/connect1.png" alt="Success" class="popup-image">
-                     </div>
-                     <h2 class="popup-title">Thank You!</h2>
-                     <p class="popup-message">Your information has been submitted successfully.</p> -->
                      <iframe
                          src="https://i.pryms.com/widget/form/WBaaOo1wEPAG7xWk9Vcy"
                          style="width:100%;height:100%;border:none;border-radius:3px"
@@ -720,7 +715,7 @@
 
     
     <!-- scripts -->
-    <script>
+    <!-- <script>
         // Get all radio buttons and labels
         const radioButtons = document.querySelectorAll('.service-radio');
         const labels = document.querySelectorAll('.service-label');
@@ -1073,7 +1068,103 @@
         if (defaultBuildType) {
             switchStep3Image(defaultBuildType.value);
         }
-    </script>
+    </script> -->
       <!-- end of scripts -->
+
+      <!-- new  -->
+<script>
+// Quiz + Simple Popup Open/Close
+document.addEventListener("DOMContentLoaded", function () {
+    const steps        = document.querySelectorAll(".step");
+    const popupOverlay = document.getElementById("popup-overlay");
+    const popupClose   = document.getElementById("popup-close");
+    let currentStep    = 0;
+
+    // Image mappings (same as before)
+    const serviceImageMap = {
+        "camera-systems": "img-camera-systems",
+        "automation": "img-automation",
+        "sound-systems": "img-sound-systems",
+        "lighting": "img-lighting",
+        "networking": "img-networking",
+        "everything": "img-everything"
+    };
+    const propertyImageMap = { "house": "img-house", "apartment": "img-apartment" };
+    const buildImageMap    = { "new-build": "img-new-build", "already-built": "img-already-built" };
+
+    // Show specific step
+    function showStep(index) {
+        steps.forEach((step, i) => step.classList.toggle("active", i === index));
+        currentStep = index;
+    }
+
+    // Update image for the active step
+    function updateImage() {
+        const activeStep   = steps[currentStep];
+        const checkedRadio = activeStep.querySelector('input[type="radio"]:checked');
+        if (!checkedRadio) return;
+
+        let imgId = "";
+        if (currentStep === 0) imgId = serviceImageMap[checkedRadio.value];
+        if (currentStep === 1) imgId = propertyImageMap[checkedRadio.value];
+        if (currentStep === 2) imgId = buildImageMap[checkedRadio.value];
+
+        activeStep.querySelectorAll(".house-image").forEach(img => img.style.display = "none");
+        if (imgId) document.getElementById(imgId).style.display = "block";
+    }
+
+    // Visual selected state for labels
+    function updateSelection(radio) {
+        const step = radio.closest(".step");
+        step.querySelectorAll(".service-label").forEach(l => l.classList.remove("selected"));
+        radio.parentElement.querySelector(".service-label").classList.add("selected");
+    }
+
+    // Radio change → image + selection
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.addEventListener("change", () => {
+            updateSelection(radio);
+            updateImage();
+        });
+    });
+
+    // Navigation
+    document.getElementById("step1-next").addEventListener("click", () => { showStep(1); updateImage(); });
+    document.getElementById("step2-prev").addEventListener("click", () => showStep(0));
+    document.getElementById("step2-next").addEventListener("click", () => { showStep(2); updateImage(); });
+    document.getElementById("step3-prev").addEventListener("click", () => showStep(1));
+
+    // FINAL STEP → Open popup (instead of alert)
+    document.getElementById("step3-next").addEventListener("click", () => {
+        popupOverlay.classList.add("active");
+        document.body.style.overflow = "hidden";   // prevent background scroll
+    });
+
+    // Close popup
+    popupClose.addEventListener("click", () => {
+        popupOverlay.classList.remove("active");
+        document.body.style.overflow = "";
+    });
+
+    // Click outside popup
+    popupOverlay.addEventListener("click", e => {
+        if (e.target === popupOverlay) {
+            popupOverlay.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+    });
+
+    // ESC key
+    document.addEventListener("keydown", e => {
+        if (e.key === "Escape" && popupOverlay.classList.contains("active")) {
+            popupOverlay.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+    });
+
+    // Initial image on page load
+    updateImage();
+});
+</script>
 </body>
 </html>
